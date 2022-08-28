@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/bg.jpg) no-repeat;
+}
+
+.container {
+  max-width: 1120px;
+  margin: auto;
+}
