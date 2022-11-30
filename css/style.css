@@ -2,11 +2,10 @@
   box-sizing: border-box;
 }
 
-
 body {
   background-image: url(../img/bg-header.jpg);
   background-repeat: no-repeat;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .container {
@@ -46,7 +45,6 @@ body {
 
 .navbar-list {
   border-bottom: 1px solid rgba(252, 0, 252, 0.2);
-  
 }
 
 .navbar-list-item-link {
@@ -63,14 +61,14 @@ body {
 }
 
 .mobile-menu-line {
-  height: .2rem;
+  height: 0.2rem;
   width: 100%;
   background-color: #fc00fc;
   border-radius: 10px;
 }
 
 .mobile-menu-line:not(:last-child) {
-  margin-bottom: .2188rem;
+  margin-bottom: 0.2188rem;
 }
 
 .close-icon {
@@ -91,20 +89,32 @@ body {
   display: none;
 }
 
+@media (min-width: 992px) {
+  .navbar-list-item-link:hover {
+    color: #681173;
+  }
+
+  /*.navbar-list-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }*/
+}
+
 @media (max-width: 1280px) {
-  html{
+  html {
     font-size: 14px;
   }
 }
 
 @media (max-width: 1024px) {
-  html{
+  html {
     font-size: 13px;
   }
 }
 
 @media (max-width: 992px) {
-  html{
+  html {
     font-size: 12px;
   }
 
@@ -127,7 +137,7 @@ body {
   .mobile-menu-toggle {
     width: 2.6rem;
     height: 100%;
-    padding: .5rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -140,7 +150,7 @@ body {
   #fourth-item,
   #fifth-item,
   #sixth-item,
-  #eighth-item  {
+  #eighth-item {
     display: none;
   }
 
@@ -166,8 +176,8 @@ body {
     width: 13.75rem;
     padding: 0.5rem;
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: .625rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
 
   .mobile-menu-list {
@@ -176,24 +186,27 @@ body {
     flex-direction: column;
     padding-left: 1rem;
     list-style: none;
-    opacity:0; 
-	  transition: 1s; 
-	  animation: show 3s 1; 
-    animation-fill-mode: forwards; 
+    opacity: 0;
+    transition: 1s;
+    animation: show 3s 1;
+    animation-fill-mode: forwards;
     animation-delay: 1s;
   }
 
-  
-  @keyframes show{
-    0%{ opacity:0; }
-    100% { opacity:1; }
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
- 
+
   #menu-seporator {
     border-top: 1px solid rgba(252, 0, 252, 0.2);
     padding-top: 1rem;
   }
-  
+
   .mobile-menu-list-item:not(:last-child) {
     margin-bottom: 0.6rem;
   }
