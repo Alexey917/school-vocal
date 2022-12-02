@@ -284,6 +284,22 @@ body {
   .container {
     max-width: 60rem;
   }
+
+  .header-wrapper {
+    background-position: center left -22rem;
+  }
+
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 150px;
+      height: 150px;
+      opacity: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -293,6 +309,18 @@ body {
 
   .social-list {
     display: none;
+  }
+
+  .header-wrapper {
+    background-position: center left -3rem;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-content {
+    padding-left: 10.5rem;
   }
 }
 
