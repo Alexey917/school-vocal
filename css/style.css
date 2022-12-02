@@ -99,12 +99,16 @@ body {
 
 .header-wrapper {
   width: 100%;
-  background-image: url("../img/main.jpg");
+  background-image: url("../img/main.webp");
   background-repeat: no-repeat;
   background-position: center left -14rem;
   background-size: cover;
   border-radius: 0.625rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.no-webp .header-wrapper {
+  background-image: url("../img/main.jpg");
 }
 
 .header-content {
