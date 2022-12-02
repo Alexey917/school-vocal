@@ -300,6 +300,7 @@ body {
       height: 150px;
       opacity: 0;
     }
+  }
 }
 
 @media (max-width: 768px) {
@@ -433,10 +434,40 @@ body {
       height: 100%;
     }
   }
+
+  .header-content {
+    padding-left: 6.5rem;
+  }
+
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 120px;
+      height: 120px;
+      opacity: 0;
+    }
+  }
+
+  .header-text-2,
+  .header-text {
+    font-size: 1rem;
+  }
+
+  .header-button {
+    padding: 0.9375rem 2rem;
+  }
 }
 
 @media (max-width: 375px) {
   .container {
     max-width: 25rem;
+  }
+
+  .header-content {
+    padding-left: 4.5rem;
   }
 }
