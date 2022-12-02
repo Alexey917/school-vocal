@@ -47,11 +47,16 @@ body {
   border-bottom: 1px solid rgba(252, 0, 252, 0.2);
 }
 
+.navbar-list-item {
+  padding: 0.5rem;
+}
+
 .navbar-list-item-link {
   position: relative;
   display: flex;
   align-items: center;
   height: 100%;
+
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -229,11 +234,17 @@ body {
     color: #681173;
   }
 
-  /*.navbar-list-item:hover {
+  #seventh-item:hover,
+  #second-item:hover,
+  #third-item:hover,
+  #fourth-item:hover,
+  #fifth-item:hover,
+  #sixth-item:hover,
+  #eighth-item:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 0.625rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  }*/
+    border-radius: 6.25rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem #681173;
+  }
 
   .header-button:hover,
   .header-button:focus {
