@@ -215,7 +215,21 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-animation: ring 1.5s infinite;
   animation: ring 1.5s infinite;
+}
+
+@-webkit-keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
 }
 
 @keyframes ring {
@@ -295,7 +309,9 @@ body {
   width: 507px;
   height: 507px;
   border-radius: 50%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center -2rem;
   object-position: center -2rem;
   z-index: 1;
   box-shadow: 0.2rem 0.2rem 1rem #ec7804;
@@ -344,6 +360,7 @@ body {
 
   .header-button:hover::after,
   .header-button:focus::after {
+    -webkit-animation: none;
     animation: none;
     display: none;
   }
@@ -397,6 +414,19 @@ body {
     background-position: center left -22rem;
   }
 
+  @-webkit-keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 150px;
+      height: 150px;
+      opacity: 0;
+    }
+  }
+
   @keyframes ring {
     0% {
       width: 30px;
@@ -423,7 +453,9 @@ body {
     width: 316px;
     height: 416px;
     border-radius: 0.625rem;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center -2rem;
     object-position: center -2rem;
     z-index: 1;
     box-shadow: none;
@@ -471,7 +503,9 @@ body {
     width: 316px;
     height: 416px;
     border-radius: 0.625rem;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center -2rem;
     object-position: center -2rem;
     z-index: 1;
     box-shadow: none;
@@ -534,9 +568,21 @@ body {
     list-style: none;
     opacity: 0;
     transition: 1s;
+    -webkit-animation: show 3s 1;
     animation: show 3s 1;
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s;
     animation-delay: 1s;
+  }
+
+  @-webkit-keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   @keyframes show {
@@ -574,7 +620,19 @@ body {
 
   .is-open {
     display: block;
+    -webkit-animation: example 1s ease-in-out;
     animation: example 1s ease-in-out;
+  }
+
+  @-webkit-keyframes example {
+    0% {
+      transform: translateY(-20px);
+      height: 10%;
+    }
+    100% {
+      transform: translateY(0);
+      height: 100%;
+    }
   }
 
   @keyframes example {
@@ -591,6 +649,19 @@ body {
   .header-content {
     max-width: 25.25rem;
     padding-left: 6.5rem;
+  }
+
+  @-webkit-keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 120px;
+      height: 120px;
+      opacity: 0;
+    }
   }
 
   @keyframes ring {
@@ -631,7 +702,9 @@ body {
     width: 360px;
     height: 416px;
     border-radius: 0.625rem;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center -2rem;
     object-position: center -2rem;
     z-index: 1;
     box-shadow: none;
@@ -672,7 +745,9 @@ body {
     width: 300px;
     height: 416px;
     border-radius: 0.625rem;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center -2rem;
     object-position: center -2rem;
     z-index: 1;
     box-shadow: none;
