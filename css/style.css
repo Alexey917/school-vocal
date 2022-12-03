@@ -285,6 +285,7 @@ body {
   font-size: 1rem;
   line-height: 1.4375rem;
   color: #ec7804;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
 
 .everyone-can-sing-img {
@@ -344,6 +345,11 @@ body {
   .header-button:focus::after {
     animation: none;
     display: none;
+  }
+
+  .everyone-can-sing-button:hover {
+    color: #ffffff;
+    box-shadow: 0 0 40px 40px #ec7804 inset;
   }
 }
 
