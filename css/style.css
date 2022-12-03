@@ -614,6 +614,36 @@ body {
   .header-button {
     padding: 0.9375rem 2rem;
   }
+
+  .everyone-can-sing-wrapper {
+    position: relative;
+    top: 39rem;
+    max-width: 60rem;
+    padding: 1.875rem 4.875rem 1.875rem 6.125rem;
+    background-color: rgba(255, 250, 250, 0.72);
+  }
+
+  .everyone-can-sing-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -180px;
+    width: 360px;
+    height: 416px;
+    border-radius: 0.625rem;
+    object-fit: cover;
+    object-position: center -2rem;
+    z-index: 1;
+    box-shadow: none;
+  }
+
+  .everyone-can-sing-title {
+    font-size: 1.3rem;
+  }
+
+  .everyone-can-sing-text {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -624,5 +654,35 @@ body {
   .header-content {
     max-width: 23.25rem;
     padding-left: 4.5rem;
+  }
+
+  .everyone-can-sing-wrapper {
+    position: relative;
+    top: 39rem;
+    max-width: 60rem;
+    padding: 1.875rem 2.875rem 1.875rem 4.125rem;
+    background-color: rgba(255, 250, 250, 0.72);
+  }
+
+  .everyone-can-sing-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    height: 416px;
+    border-radius: 0.625rem;
+    object-fit: cover;
+    object-position: center -2rem;
+    z-index: 1;
+    box-shadow: none;
+  }
+
+  .everyone-can-sing-title {
+    font-size: 1.3rem;
+  }
+
+  .everyone-can-sing-text {
+    font-size: 1rem;
   }
 }
