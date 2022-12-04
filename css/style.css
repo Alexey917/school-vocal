@@ -441,6 +441,16 @@ body {
   .everyone-can-sing-img:hover {
     transform: rotate(360deg);
   }
+
+  .learn-text:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px #71ad19;
+  }
+
+  .having-completed-training-title:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px #71ad19;
+  }
 }
 
 @media (max-width: 1280px) {
