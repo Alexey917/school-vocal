@@ -393,6 +393,7 @@ body {
 
   width: 17.8125rem;
   height: 25.4375rem;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 2.5rem;
   border: 1px solid #71ad19;
