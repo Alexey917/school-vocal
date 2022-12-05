@@ -881,6 +881,10 @@ body {
   .learn-text {
     font-size: 1rem;
   }
+
+  .having-completed-training-content {
+    width: 30rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -923,5 +927,9 @@ body {
 
   .everyone-can-sing-text {
     font-size: 1rem;
+  }
+
+  .having-completed-training-content {
+    width: 25rem;
   }
 }
