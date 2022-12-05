@@ -593,6 +593,20 @@ body {
   .circle {
     display: none;
   }
+
+  .having-completed-training {
+    margin-top: 6.627rem;
+  }
+
+  .having-completed-training-wrapper {
+    flex-direction: column;
+  }
+
+  .having-completed-training-learn {
+    margin-top: 2rem;
+    margin-left: 8rem;
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 768px) {
@@ -638,6 +652,23 @@ body {
     object-position: center -2rem;
     z-index: 1;
     box-shadow: none;
+  }
+
+  .having-completed-training {
+    margin-top: 44.627rem;
+  }
+
+  .having-completed-training-content {
+    width: 40rem;
+  }
+
+  .having-completed-training-learn {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .having-completed-training-wrapper {
+    align-items: center;
   }
 }
 
@@ -844,6 +875,10 @@ body {
   }
 
   .everyone-can-sing-text {
+    font-size: 1rem;
+  }
+
+  .learn-text {
     font-size: 1rem;
   }
 }
