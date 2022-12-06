@@ -505,6 +505,44 @@ body {
   }
 }
 
+.at-the-end-of-school {
+  margin-top: 6rem;
+}
+
+.at-the-end-of-school-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.at-the-end-of-school-img {
+  width: 32.1875rem;
+  height: 26.375rem;
+  object-fit: cover;
+  object-position: top -7rem left 0;
+  border-radius: 0.625rem;
+}
+
+.at-the-end-of-school-content {
+  padding: 1.875rem 1.875rem 1.875rem 1.875rem;
+  background-color: rgba(255, 250, 250, 0.32);
+  border-radius: 0.625rem;
+}
+
+.at-the-end-of-school-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+.music-note-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
 @media (max-width: 1280px) {
   html {
     font-size: 14px;
