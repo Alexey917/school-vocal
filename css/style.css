@@ -516,7 +516,7 @@ body {
 }
 
 .at-the-end-of-school-img {
-  width: 32.1875rem;
+  width: 29.1875rem;
   height: 26.375rem;
   object-fit: cover;
   object-position: top -7rem left 0;
@@ -525,15 +525,27 @@ body {
 
 .at-the-end-of-school-content {
   padding: 1.875rem 1.875rem 1.875rem 1.875rem;
-  background-color: rgba(255, 250, 250, 0.32);
+  background-color: rgba(255, 250, 250, 0.82);
   border-radius: 0.625rem;
+  margin-right: 4rem;
 }
 
 .at-the-end-of-school-list {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   padding: 0;
   list-style: none;
+}
+
+.at-the-end-of-school-ttitle {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2875rem;
+  line-height: 3.1875rem;
+  text-transform: uppercase;
+  color: #fc00fc;
 }
 
 .music-note-icon {
@@ -541,6 +553,18 @@ body {
   height: 1.25rem;
   margin-right: 1rem;
   flex-shrink: 0;
+}
+
+.at-the-end-of-school-item:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
+.at-the-end-of-school-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #3d3935;
 }
 
 @media (max-width: 1280px) {
