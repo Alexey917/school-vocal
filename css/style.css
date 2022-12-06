@@ -464,16 +464,9 @@ body {
   height: 26.375rem;
   object-fit: cover;
   object-position: top -7rem left 0;
-  display: inline-block;
-  overflow: hidden;
   border-radius: 0.625rem;
   box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
   z-index: 1;
-}
-
-.at-the-end-of-school-img picture {
-  transition: 1s; /* Время эффекта */
-  display: block;
 }
 
 .at-the-end-of-school-content {
@@ -596,10 +589,6 @@ body {
   }
   .change-img:hover .having-completed-training-img-back-side {
     transform: rotateY(360deg);
-  }
-
-  .at-the-end-of-school-img picture:hover {
-    transform: scale(1.2); /* Увеличиваем масштаб */
   }
 }
 
