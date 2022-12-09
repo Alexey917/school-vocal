@@ -759,6 +759,20 @@ body {
     margin-left: 8rem;
     justify-content: flex-start;
   }
+
+  .img-wrapper {
+    right: 19rem;
+  }
+
+  .background-block {
+    right: 14rem;
+  }
+
+  .at-the-end-of-school-content {
+    top: 33rem;
+    right: 50%;
+    margin-right: -16.5rem;
+  }
 }
 
 @media (max-width: 768px) {
