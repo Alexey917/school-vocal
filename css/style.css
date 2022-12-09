@@ -3,8 +3,8 @@
 }
 
 body {
-  background-image: url("../img/bg-8.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../img/bg-6.jpg");
+  background-repeat: repeat-y;
   background-size: cover;
   font-family: "Jost", sans-serif;
 }
@@ -835,6 +835,20 @@ body {
 
   .having-completed-training-wrapper {
     align-items: center;
+  }
+
+  .img-wrapper {
+    top: -3rem;
+    right: 7.9375rem;
+  }
+
+  .background-block {
+    top: 1rem;
+    right: 2.9375rem;
+  }
+
+  .at-the-end-of-school-content {
+    margin-right: -6.6875rem;
   }
 }
 
