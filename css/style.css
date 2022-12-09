@@ -552,13 +552,18 @@ body {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.4375rem;
+  color: #ffffff;
+  box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
+  background-color: #fc00fc;
+  border: 0.0625rem solid #fc00fc;
   border-radius: 6.25rem;
   transition: all 0.2s;
 }
 
 .at-the-end-of-school-button:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(252, 0, 252, 0.5);
+  box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
+  /*box-shadow: 0 5px 10px rgba(252, 0, 252, 0.5);*/
 }
 
 .at-the-end-of-school-button::after {
