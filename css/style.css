@@ -457,15 +457,25 @@ body {
   align-items: flex-start;
 }
 
-.at-the-end-of-school-img {
+.img-wrapper {
   position: absolute;
   right: 8rem;
+  width: 32.1875rem;
+  height: 26.375rem;
+  border-radius: 0.625rem;
+  box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
+  overflow: hidden;
+}
+
+.at-the-end-of-school-img {
+  position: absolute;
   width: 32.1875rem;
   height: 26.375rem;
   object-fit: cover;
   object-position: top -7rem left 0;
   border-radius: 0.625rem;
   box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
+  transition: 1s;
   z-index: 1;
 }
 
@@ -589,6 +599,10 @@ body {
   }
   .change-img:hover .having-completed-training-img-back-side {
     transform: rotateY(360deg);
+  }
+
+  .at-the-end-of-school-img:hover {
+    transform: scale(1.2);
   }
 }
 
