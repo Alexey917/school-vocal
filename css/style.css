@@ -1065,6 +1065,31 @@ body {
   .having-completed-training-content {
     width: 30rem;
   }
+
+  .img-wrapper {
+    right: 1.938rem;
+    width: 28.188rem;
+  }
+
+  .background-block {
+    right: 0;
+    width: 28.188rem;
+  }
+
+  .at-the-end-of-school-content {
+    max-width: 30rem;
+    right: 0;
+    margin-right: 0;
+    padding: 1.875rem 1.075rem 1.875rem 1.075rem;
+  }
+
+  .at-the-end-of-school-text {
+    font-size: 1rem;
+  }
+
+  .at-the-end-of-school-title {
+    font-size: 1.0875rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1111,5 +1136,38 @@ body {
 
   .having-completed-training-content {
     width: 25rem;
+  }
+
+  .img-wrapper {
+    right: 1.938rem;
+    width: 23.188rem;
+  }
+
+  .at-the-end-of-school-img {
+    object-position: top -7rem left -4rem;
+  }
+
+  .background-block {
+    right: 0;
+    width: 23.188rem;
+  }
+
+  .at-the-end-of-school-content {
+    max-width: 25rem;
+    right: 0;
+    margin-right: 0;
+    padding: 1.875rem 2.075rem 1.875rem 2.075rem;
+  }
+
+  .at-the-end-of-school-text {
+    font-size: 1rem;
+  }
+
+  .at-the-end-of-school-title {
+    font-size: 1rem;
+  }
+
+  .at-the-end-of-school-button {
+    top: 23.5rem;
   }
 }
