@@ -471,7 +471,9 @@ body {
   position: absolute;
   width: 32.1875rem;
   height: 26.375rem;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: top -7rem left 0;
   object-position: top -7rem left 0;
   border-radius: 0.625rem;
   box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
@@ -1144,6 +1146,7 @@ body {
   }
 
   .at-the-end-of-school-img {
+    -o-object-position: top -7rem left -4rem;
     object-position: top -7rem left -4rem;
   }
 
