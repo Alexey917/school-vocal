@@ -626,35 +626,85 @@ body {
   color: #ec7804;
 }
 
-.button-test {
+/*.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn {
   position: relative;
-  margin-top: 2rem;
-  width: 65%;
-  padding: 0.9375rem 2.5313rem;
+  display: block;
+  color: #ec7804;
   background: #ffffff;
-  border: 2px solid #ec7804;
-  cursor: pointer;
-  outline: none;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
   line-height: 1.4375rem;
-  color: #ec7804;
+  text-decoration: none;
+  margin-top: 2rem;
+  padding: 0.9375rem 2.5313rem;
+  border: 2px solid #ec7804;
   overflow: hidden;
   transition: 1s all ease;
 }
-
-.button-test::before {
+.btn::before {
+  background: #ec7804;
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 65%;
-  height: 0%;
   transform: translate(-50%, -50%);
   z-index: -1;
   transition: all 0.6s ease;
-  background-color: #ec7804;
+}
+
+.btn1::before {
+  width: 0%;
+  height: 100%;
+}
+
+.btn1:hover::before {
+  width: 100%;
+}*/
+
+/*.middle {
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
+
+.button-test {
+  position: relative;
+  display: block;
+  color: #ec7804;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4375rem;
+  text-decoration: none;
+  margin-top: 2rem;
+  border: 2px solid #ec7804;
+  padding: 0.9375rem 2.5313rem;
+  overflow: hidden;
+  transition: 1s all ease;
+  background: #ffffff;
+}
+.button-test::before {
+  background: #ec7804;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.button-test-hover::before {
+  width: 100%;
+  height: 0%;
 }
 
 @media (min-width: 992px) {
@@ -732,7 +782,11 @@ body {
     opacity: 0;
   }
 
-  .button-test:hover::before {
+  .button-test:hover {
+    color: #ffffff;
+  }
+
+  .button-test-hover:hover::before {
     height: 100%;
   }
 }
