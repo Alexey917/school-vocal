@@ -509,7 +509,7 @@ body {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
   padding: 0;
   list-style: none;
 }
@@ -545,7 +545,7 @@ body {
 
 .at-the-end-of-school-button {
   position: absolute;
-  top: 18.5rem;
+  top: 19.5rem;
   min-width: 9.9375rem;
   padding: 0.9375rem 2.5313rem;
   cursor: pointer;
@@ -583,7 +583,7 @@ body {
 }
 
 .test {
-  margin-top: 44rem;
+  margin-top: 50rem;
 }
 
 .test-picture {
@@ -872,7 +872,7 @@ body {
   }
 
   .test {
-    margin-top: 62rem;
+    margin-top: 65rem;
   }
 }
 
@@ -1292,11 +1292,11 @@ body {
   }
 
   .at-the-end-of-school-button {
-    top: 23.5rem;
+    top: 25rem;
   }
 
   .test {
-    margin-top: 66rem;
+    margin-top: 70rem;
   }
 
   .test-title {
