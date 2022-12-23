@@ -455,6 +455,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
+  height: 41rem;
 }
 
 .img-wrapper {
@@ -583,7 +584,7 @@ body {
 }
 
 .test {
-  margin-top: 50rem;
+  margin-top: 6rem;
 }
 
 .test-picture {
@@ -871,8 +872,12 @@ body {
     margin-right: -16.5rem;
   }
 
+  .at-the-end-of-school-wrapper {
+    height: 66rem;
+  }
+
   .test {
-    margin-top: 65rem;
+    margin-top: 3rem;
   }
 }
 
@@ -1213,6 +1218,10 @@ body {
   .test-picture {
     height: 26.125rem;
   }
+
+  .at-the-end-of-school-wrapper {
+    height: 64rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1295,8 +1304,12 @@ body {
     top: 25rem;
   }
 
+  .at-the-end-of-school-wrapper {
+    height: 64rem;
+  }
+
   .test {
-    margin-top: 70rem;
+    margin-top: 6rem;
   }
 
   .test-title {
