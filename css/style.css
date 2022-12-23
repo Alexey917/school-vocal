@@ -690,6 +690,7 @@ body {
   overflow: hidden;
   transition: 1s all ease;
   background: #ffffff;
+  z-index: 1;
 }
 .button-test::before {
   background: #ec7804;
@@ -788,6 +789,7 @@ body {
 
   .button-test-hover:hover::before {
     height: 100%;
+    border: 2px solid #ec7804;
   }
 }
 
