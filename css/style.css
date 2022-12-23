@@ -626,55 +626,6 @@ body {
   color: #ec7804;
 }
 
-/*.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.btn {
-  position: relative;
-  display: block;
-  color: #ec7804;
-  background: #ffffff;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.4375rem;
-  text-decoration: none;
-  margin-top: 2rem;
-  padding: 0.9375rem 2.5313rem;
-  border: 2px solid #ec7804;
-  overflow: hidden;
-  transition: 1s all ease;
-}
-.btn::before {
-  background: #ec7804;
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  transition: all 0.6s ease;
-}
-
-.btn1::before {
-  width: 0%;
-  height: 100%;
-}
-
-.btn1:hover::before {
-  width: 100%;
-}*/
-
-/*.middle {
-  /*position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}*/
-
 .button-test {
   position: relative;
   display: block;
