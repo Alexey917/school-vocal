@@ -589,6 +589,7 @@ body {
 .test-picture {
   display: flex;
   width: 25rem;
+  height: 28.125rem;
   border-radius: 0.625rem 0 0 0.625rem;
   object-fit: cover;
 }
@@ -1256,6 +1257,10 @@ body {
 
   .button-test {
     margin-top: 1.3rem;
+  }
+
+  .test-picture {
+    height: 26.125rem;
   }
 }
 
