@@ -5,6 +5,8 @@ const iconToggleTwo = document.querySelector(".mobile-menu-line-2");
 const iconToggleThree = document.querySelector(".mobile-menu-line-3");
 const iconClose = document.querySelector(".close-icon");
 const mobileLink = document.querySelectorAll(".mobile-menu-link");
+const buttonTestModal = document.querySelector(".button-test");
+const testModal = document.querySelector(".test-modal");
 
 const openMenu = (event) => {
   menu.classList.add("is-open");
@@ -40,6 +42,11 @@ mMenuToggle.addEventListener("click", (event) => {
       }
     });
   });
+});
+
+buttonTestModal.addEventListener("click", (event) => {
+  event.preventDefault();
+  testModal.classList.add("test-modal-is-open");
 });
 
 //#F16E02
