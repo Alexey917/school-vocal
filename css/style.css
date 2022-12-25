@@ -455,7 +455,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
-  height: 41rem;
+  height: 47rem;
 }
 
 .img-wrapper {
@@ -873,7 +873,7 @@ body {
   }
 
   .at-the-end-of-school-wrapper {
-    height: 66rem;
+    height: 72rem;
   }
 
   .test {
@@ -1220,7 +1220,7 @@ body {
   }
 
   .at-the-end-of-school-wrapper {
-    height: 64rem;
+    height: 70rem;
   }
 }
 
@@ -1302,10 +1302,6 @@ body {
 
   .at-the-end-of-school-button {
     top: 25rem;
-  }
-
-  .at-the-end-of-school-wrapper {
-    height: 64rem;
   }
 
   .test {
