@@ -399,17 +399,17 @@ body {
   border: 1px solid #71ad19;
 }
 
-.having-completed-training-img picture {
+/*.having-completed-training-img picture {
   /*max-width: 100%;
   min-width: 100%;
-  height: auto;*/
+  height: auto;
 }
 
 .having-completed-training-img-back-side picture {
-  /* max-width: 100%;
+   max-width: 100%;
   min-width: 100%;
   height: auto;
-  transform: scaleX(-1); /* Отражаем изображение по горизонтали */
+  transform: scaleX(-1); /* Отражаем изображение по горизонтали 
 }
 
 /*.having-completed-training-img-back-side {
@@ -592,7 +592,8 @@ body {
   width: 25rem;
   height: 28.125rem;
   border-radius: 0.625rem 0 0 0.625rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .test-wrapper {
