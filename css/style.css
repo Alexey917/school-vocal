@@ -371,7 +371,7 @@ body {
   justify-content: center;
 }
 
-.change-img {
+/*.change-img {
   position: relative;
   perspective: 1000px;
   width: 17.8125rem;
@@ -379,7 +379,7 @@ body {
   border-radius: 2.5rem;
   border: 1px solid #71ad19;
   box-shadow: 0.2rem 0.2rem 1rem #71ad19;
-}
+}*/
 
 .having-completed-training-img,
 .having-completed-training-img-back-side {
@@ -389,7 +389,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 1s;
+  /*transition: 1s;*/
 
   width: 17.8125rem;
   height: 25.4375rem;
@@ -711,6 +711,11 @@ body {
   }
 
   .having-completed-training-title:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px #71ad19;
+  }
+
+  .having-completed-training-img:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px #71ad19;
   }
