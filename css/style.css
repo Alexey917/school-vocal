@@ -383,9 +383,9 @@ body {
 
 .having-completed-training-img,
 .having-completed-training-img-back-side {
-  position: absolute;
+  /*position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100%;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -400,21 +400,21 @@ body {
 }
 
 .having-completed-training-img picture {
-  max-width: 100%;
+  /*max-width: 100%;
   min-width: 100%;
-  height: auto;
+  height: auto;*/
 }
 
 .having-completed-training-img-back-side picture {
-  max-width: 100%;
+  /* max-width: 100%;
   min-width: 100%;
   height: auto;
   transform: scaleX(-1); /* Отражаем изображение по горизонтали */
 }
 
-.having-completed-training-img-back-side {
+/*.having-completed-training-img-back-side {
   transform: rotateY(180deg);
-}
+}*/
 
 .having-completed-training-learn {
   display: flex;
@@ -455,7 +455,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
-  height: 47rem;
+  height: 44rem;
 }
 
 .img-wrapper {
@@ -715,12 +715,12 @@ body {
     box-shadow: 0 10px 20px #71ad19;
   }
 
-  .change-img:hover .having-completed-training-img {
+  /*.change-img:hover .having-completed-training-img {
     transform: rotateY(180deg);
   }
   .change-img:hover .having-completed-training-img-back-side {
     transform: rotateY(360deg);
-  }
+  }*/
 
   .at-the-end-of-school-img:hover {
     transform: scale(1.2);
@@ -873,7 +873,7 @@ body {
   }
 
   .at-the-end-of-school-wrapper {
-    height: 72rem;
+    height: 69rem;
   }
 
   .test {
@@ -1220,7 +1220,7 @@ body {
   }
 
   .at-the-end-of-school-wrapper {
-    height: 70rem;
+    height: 67rem;
   }
 }
 
