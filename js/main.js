@@ -7,6 +7,7 @@ const iconClose = document.querySelector(".close-icon");
 const mobileLink = document.querySelectorAll(".mobile-menu-link");
 const buttonTestModal = document.querySelector(".button-test");
 const testModal = document.querySelector(".test-modal");
+const testModalDialog = document.querySelector(".test-modal-dialog");
 const closeTestModal = document.querySelector(".close-test-modal");
 
 const openMenu = (event) => {
@@ -45,14 +46,33 @@ mMenuToggle.addEventListener("click", (event) => {
   });
 });
 
-buttonTestModal.addEventListener("click", (event) => {
+/*buttonTestModal.addEventListener("click", (event) => {
   event.preventDefault();
   testModal.classList.add("test-modal-is-open");
-});
+});*/
 
 closeTestModal.addEventListener("click", (event) => {
   event.preventDefault();
   testModal.classList.remove("test-modal-is-open");
 });
 
+document.addEventListener("click", (event) => {
+  if (
+    event.target.dataset.toggle == "test-modal" ||
+    event.target.parentNode.dataset.toggle == "test-modal" ||
+    !event.composedPath().includes(testModalDialog)
+  ) {
+    event.preventDefault();
+    testModal.classList.toggle("test-modal-is-open");
+  }
+});
+
+document.addEventListener("keyup", (event) => {
+  if (
+    event.key == "Escape" &&
+    testModal.classList.contains("test-modal-is-open")
+  ) {
+    testModal.classList.toggle("test-modal-is-open");
+  }
+});
 //#F16E02
