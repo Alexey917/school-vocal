@@ -682,10 +682,11 @@ body {
   margin: auto;
   max-width: 49.375rem;
   padding: 1.25rem;
-  background-color: #fff;
+  background-color: rgb(244, 230, 242);
   opacity: 0;
   transform: translateY(-10%);
   transition: transform 0.4s, opacity 0.4s;
+  border-radius: .625rem;
 }
 
 .test-modal-is-open .test-modal-dialog {
@@ -698,6 +699,20 @@ body {
   visibility: visible;
   opacity: 1;
   z-index: 10;
+}
+
+.close-test-modal {
+  position: absolute;
+  top: 0.875rem;
+  right: 0.875rem;
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+.test-close-icon {
+  width: 100%;
+  height: 1rem;
+  border: 1px solid #fc00fc;
 }
 
 @media (min-width: 992px) {
