@@ -50,4 +50,9 @@ buttonTestModal.addEventListener("click", (event) => {
   testModal.classList.add("test-modal-is-open");
 });
 
+closeTestModal.addEventListener("click", (event) => {
+  event.preventDefault();
+  testModal.classList.remove("test-modal-is-open");
+});
+
 //#F16E02

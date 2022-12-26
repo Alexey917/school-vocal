@@ -690,7 +690,7 @@ body {
 }
 
 .test-modal-is-open .test-modal-dialog {
-  transform: translateY(0);
+  transform: translateY(100px);
   opacity: 1;
 }
 
@@ -712,7 +712,6 @@ body {
 .test-close-icon {
   width: 100%;
   height: 1rem;
-  border: 1px solid #fc00fc;
 }
 
 @media (min-width: 992px) {
