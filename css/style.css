@@ -714,6 +714,16 @@ body {
   height: 1rem;
 }
 
+.question-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2875rem;
+  line-height: 3.1875rem;
+  color: #fc00fc;
+}
+
+
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
     color: #681173;
