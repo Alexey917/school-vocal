@@ -11,6 +11,9 @@ const testModal = document.querySelector(".test-modal");
 const testModalDialog = document.querySelector(".test-modal-dialog");
 const closeTestModal = document.querySelector(".close-test-modal");
 
+const inputAnswer = document.querySelectorAll(".input-answer");
+const changeColor = document.querySelector(".answer-text");
+
 const openMenu = (event) => {
   menu.classList.add("is-open");
   mMenuToggle.classList.add("close-menu");
@@ -71,4 +74,16 @@ document.addEventListener("keyup", (event) => {
     testModal.classList.toggle("test-modal-is-open");
   }
 });
+
+/*inputAnswer.forEach((inputItem) => {
+  inputItem.addEventListener("input", () => {
+    console.log("click");
+    if (inputItem.checked) {
+      inputItem.classList.add("answer-text-sected");
+      console.log("true");
+    } else {
+      inputItem.classList.remove("answer-text-sected");
+    }
+  });
+});*/
 
