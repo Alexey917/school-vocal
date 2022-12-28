@@ -893,7 +893,7 @@ body {
 
   .test-modal-prev-button:hover,
   .test-modal-next-button:hover {
-    box-shadow: 0 0 5px #fc00fc, 0 0 25px #fc00fc, 0 0 50px #fc00fc, 0 0 80px #fc00fc;
+    box-shadow: 0 0 5px #fc00fc, 0 0 15px #fc00fc, 0 0 35px #fc00fc, 0 0 60px #fc00fc;
     background-color: #fc00fc;
     color: #ffffff;
   }
