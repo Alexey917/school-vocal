@@ -13,6 +13,7 @@ const closeTestModal = document.querySelector(".close-test-modal");
 
 const inputAnswer = document.querySelectorAll(".input-answer");
 const changeColor = document.querySelector(".answer-text");
+const labelCheck = document.querySelector(".label-answer")
 
 const openMenu = (event) => {
   menu.classList.add("is-open");
@@ -79,11 +80,8 @@ document.addEventListener("keyup", (event) => {
   inputItem.addEventListener("input", () => {
     console.log("click");
     if (inputItem.checked) {
-      inputItem.classList.add("answer-text-sected");
-      console.log("true");
-    } else {
-      inputItem.classList.remove("answer-text-sected");
-    }
+    } 
   });
 });*/
 
+//inputItem.classList.add("answer-text-sected");
