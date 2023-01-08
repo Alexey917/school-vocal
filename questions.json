@@ -46,7 +46,7 @@
           "title": "50+ лет"
         }
       ],
-      "type": "checkbox"
+      "type": "radio"
     }
   ]
 }

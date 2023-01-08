@@ -11,9 +11,65 @@ const testModal = document.querySelector(".test-modal");
 const testModalDialog = document.querySelector(".test-modal-dialog");
 const closeTestModal = document.querySelector(".close-test-modal");
 
+const questionTitle = document.querySelector(".question-title");
+const formAnswers = document.querySelector("#formAnswers");
+const nextButton = document.querySelector(".test-modal-next-button");
+const prevButton = document.querySelector(".test-modal-prev-button");
+
 const inputAnswer = document.querySelectorAll(".input-answer");
 const changeColor = document.querySelector(".answer-text");
-const labelCheck = document.querySelector(".label-answer")
+const labelCheck = document.querySelector(".label-answer");
+
+const questions = [
+  {
+    question: "Есть ли у вас опыт занятий вокалом?",
+    answers: [
+      {
+        title: "Нет опыта",
+      },
+      {
+        title: "Занимался(-ась) давно, хочу вспомнить и подтянуть вокал",
+      },
+      {
+        title: "Занимался(-ась), но не регулярно",
+      },
+    ],
+    type: "radio",
+  },
+  {
+    question: "Хотите научиться петь профессионально или для себя?",
+    answers: [
+      {
+        title: "Хочу петь для себя",
+      },
+      {
+        title: "Хочу петь профессионально",
+      },
+    ],
+    type: "radio",
+  },
+  {
+    question: "Сколько вам лет?",
+    answers: [
+      {
+        title: "14-17 лет",
+      },
+      {
+        title: "18-30 лет",
+      },
+      {
+        title: "31-40 лет",
+      },
+      {
+        title: "41-50 лет",
+      },
+      {
+        title: "50+ лет",
+      },
+    ],
+    type: "radio",
+  },
+];
 
 const openMenu = (event) => {
   menu.classList.add("is-open");
@@ -65,6 +121,10 @@ document.addEventListener("click", (event) => {
     event.preventDefault();
     testModal.classList.toggle("test-modal-is-open");
   }
+
+  if (testModal.classList.contains("test-modal-is-open")) {
+    playTest();
+  }
 });
 
 document.addEventListener("keyup", (event) => {
@@ -75,6 +135,55 @@ document.addEventListener("keyup", (event) => {
     testModal.classList.toggle("test-modal-is-open");
   }
 });
+
+const playTest = () => {
+  let numberQuestion = 0;
+
+  const renderAnswers = (index) => {
+    questions[index].answers.forEach((answer) => {
+      const answerItem = document.createElement("div");
+      answerItem.classList.add("answers-item");
+      answerItem.innerHTML = `
+        <input
+          type="radio"
+          id="${answer.title}"
+          name="answer"
+          class="input-answer"
+        />
+        <label for="${answer.title}" class="label-answer">
+          <span class="answer-text">${answer.title}</span>
+        </label>
+      `;
+
+      /* Встраиваем содержимое формы в форму :) */
+      formAnswers.appendChild(answerItem);
+    });
+  };
+
+  const renderQuestions = (indexQuestion) => {
+    formAnswers.innerHTML = "";
+
+    questionTitle.textContent = `${questions[indexQuestion].question}`;
+
+    renderAnswers(indexQuestion);
+  };
+
+  renderQuestions(numberQuestion);
+
+  nextButton.onclick = () => {
+    numberQuestion++;
+    renderQuestions(numberQuestion);
+    console.log("next");
+    console.log(numberQuestion);
+  };
+
+  prevButton.onclick = () => {
+    numberQuestion--;
+    renderQuestions(numberQuestion);
+    console.log("prev");
+    console.log(numberQuestion);
+  };
+};
 
 /*inputAnswer.forEach((inputItem) => {
   inputItem.addEventListener("input", () => {
