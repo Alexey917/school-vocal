@@ -145,7 +145,7 @@ const playTest = () => {
       answerItem.classList.add("answers-item");
       answerItem.innerHTML = `
         <input
-          type="radio"
+          type="${questions[index].type}"
           id="${answer.title}"
           name="answer"
           class="input-answer"
@@ -161,7 +161,7 @@ const playTest = () => {
   };
 
   const renderQuestions = (indexQuestion) => {
-    formAnswers.innerHTML = "";
+    /*formAnswers.innerHTML = "";*/
 
     questionTitle.textContent = `${questions[indexQuestion].question}`;
 
