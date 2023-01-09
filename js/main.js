@@ -155,6 +155,7 @@ const playTest = () => {
           type="${questions[index].type}"
           id="${answer.title}"
           name="answer"
+          value="${answer.title}"
           class="input-answer"
         />
         <label for="${answer.title}" class="label-answer">
@@ -196,9 +197,9 @@ const playTest = () => {
     const inputs = [...formAnswers.elements].filter((input) => input.checked);
 
     inputs.forEach((input) => {
-      obj["name"] = "value";
+      obj[questions[numberQuestion].question] = input.value;
     });
-    console.log(inputs);
+    console.log(obj);
   };
 
   nextButton.onclick = () => {
