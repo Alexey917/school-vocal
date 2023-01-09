@@ -107,12 +107,7 @@ mMenuToggle.addEventListener("click", (event) => {
   });
 });
 
-closeTestModal.addEventListener("click", (event) => {
-  event.preventDefault();
-  testModal.classList.remove("test-modal-is-open");
-});
-
-document.addEventListener("click", (event) => {
+/*document.addEventListener("click", (event) => {
   if (
     event.target.dataset.toggle == "test-modal" ||
     event.target.parentNode.dataset.toggle == "test-modal" ||
@@ -125,6 +120,17 @@ document.addEventListener("click", (event) => {
   if (testModal.classList.contains("test-modal-is-open")) {
     playTest();
   }
+});*/
+
+buttonTestModal.addEventListener("click", (event) => {
+  event.preventDefault();
+  testModal.classList.add("test-modal-is-open");
+  playTest();
+});
+
+closeTestModal.addEventListener("click", (event) => {
+  event.preventDefault();
+  testModal.classList.remove("test-modal-is-open");
 });
 
 document.addEventListener("keyup", (event) => {
@@ -161,7 +167,7 @@ const playTest = () => {
   };
 
   const renderQuestions = (indexQuestion) => {
-    /*formAnswers.innerHTML = "";*/
+    /* formAnswers.innerHTML = ` `;*/
 
     questionTitle.textContent = `${questions[indexQuestion].question}`;
 
@@ -169,20 +175,6 @@ const playTest = () => {
   };
 
   renderQuestions(numberQuestion);
-
-  nextButton.onclick = () => {
-    numberQuestion++;
-    renderQuestions(numberQuestion);
-    console.log("next");
-    console.log(numberQuestion);
-  };
-
-  prevButton.onclick = () => {
-    numberQuestion--;
-    renderQuestions(numberQuestion);
-    console.log("prev");
-    console.log(numberQuestion);
-  };
 };
 
 /*inputAnswer.forEach((inputItem) => {
