@@ -143,6 +143,7 @@ document.addEventListener("keyup", (event) => {
 });
 
 const playTest = () => {
+  const finalAnswers = {};
   let numberQuestion = 0;
 
   const renderAnswers = (index) => {
@@ -167,14 +168,49 @@ const playTest = () => {
   };
 
   const renderQuestions = (indexQuestion) => {
-    /* formAnswers.innerHTML = ` `;*/
+    formAnswers.innerHTML = ` `;
 
-    questionTitle.textContent = `${questions[indexQuestion].question}`;
+    if (numberQuestion >= 0 && numberQuestion <= questions.length - 1) {
+      questionTitle.textContent = `${questions[indexQuestion].question}`;
 
-    renderAnswers(indexQuestion);
+      renderAnswers(indexQuestion);
+
+      nextButton.style.display = "block";
+      prevButton.style.display = "block";
+    }
+
+    if (numberQuestion === 0) {
+      prevButton.style.display = "none";
+    }
+
+    if (numberQuestion === questions.length - 1) {
+      nextButton.style.display = "none";
+    }
   };
 
   renderQuestions(numberQuestion);
+
+  const checkAnswer = () => {
+    const obj = {};
+
+    const inputs = [...formAnswers.elements].filter((input) => input.checked);
+
+    inputs.forEach((input) => {
+      obj["name"] = "value";
+    });
+    console.log(inputs);
+  };
+
+  nextButton.onclick = () => {
+    checkAnswer();
+    numberQuestion++;
+    renderQuestions(numberQuestion);
+  };
+
+  prevButton.onclick = () => {
+    numberQuestion--;
+    renderQuestions(numberQuestion);
+  };
 };
 
 /*inputAnswer.forEach((inputItem) => {
