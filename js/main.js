@@ -143,7 +143,7 @@ document.addEventListener("keyup", (event) => {
 });
 
 const playTest = () => {
-  const finalAnswers = {};
+  const finalAnswers = [];
   let numberQuestion = 0;
 
   const renderAnswers = (index) => {
@@ -184,8 +184,35 @@ const playTest = () => {
       prevButton.style.display = "none";
     }
 
-    if (numberQuestion === questions.length - 1) {
+    if (numberQuestion === questions.length) {
       nextButton.style.display = "none";
+      prevButton.style.display = "none";
+
+      questionTitle.textContent = `Укажите ваше имя и номер телефона, чтобы получить приглашение на бесплатное занятие`;
+
+      formAnswers.innerHTML = `
+      <div class="form-test-group">
+        <input 
+         id="test-user-name" 
+         type="text" 
+         class="test-input" 
+         name="user-name" 
+         placeholder=" "
+        />
+        <label class="test-input-label" for="test-user-name">Имя</label>
+      </div>
+
+      <div class="form-test-group">
+        <input 
+         id="test-user-phone" 
+         type="text" 
+         class="test-input" 
+         name="user-name" 
+         placeholder=" "
+        />
+        <label class="test-input-label" for="test-user-phone">Номер телефона</label>
+      </div>
+      `;
     }
   };
 
@@ -196,10 +223,12 @@ const playTest = () => {
 
     const inputs = [...formAnswers.elements].filter((input) => input.checked);
 
-    inputs.forEach((input) => {
-      obj[questions[numberQuestion].question] = input.value;
+    inputs.forEach((input, index) => {
+      obj[`${index}_${questions[numberQuestion].question}`] = input.value;
     });
-    console.log(obj);
+
+    finalAnswers.push(obj);
+    console.log(finalAnswers);
   };
 
   nextButton.onclick = () => {

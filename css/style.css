@@ -724,8 +724,14 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 1.2875rem;
-  line-height: 3.1875rem;
+  line-height: 2.5875rem;
   color: #fc00fc;
+}
+
+.answers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .answers-item {
