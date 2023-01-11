@@ -15,6 +15,7 @@ const questionTitle = document.querySelector(".question-title");
 const formAnswers = document.querySelector("#formAnswers");
 const nextButton = document.querySelector(".test-modal-next-button");
 const prevButton = document.querySelector(".test-modal-prev-button");
+const sendButton = document.querySelector(".test-modal-button");
 
 const inputAnswer = document.querySelectorAll(".input-answer");
 const changeColor = document.querySelector(".answer-text");
@@ -233,7 +234,10 @@ const playTest = () => {
   const checkAnswer = () => {
     const obj = {};
 
-    const inputs = [...formAnswers.elements].filter((input) => input.checked);
+    const inputs = [...formAnswers.elements].filter(
+      (input) => input.checked || input.id === "test-user-name"
+    );
+    console.log(inputs);
 
     inputs.forEach((input, index) => {
       obj[`${index}_${questions[numberQuestion].question}`] = input.value;
@@ -252,6 +256,11 @@ const playTest = () => {
   prevButton.onclick = () => {
     numberQuestion--;
     renderQuestions(numberQuestion);
+  };
+
+  sendButton.onclick = () => {
+    checkAnswer();
+    console.log(finalAnswers);
   };
 };
 
