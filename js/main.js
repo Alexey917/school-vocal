@@ -212,6 +212,18 @@ const playTest = () => {
         />
         <label class="test-input-label" for="test-user-phone">Номер телефона</label>
       </div>
+
+      <div class="form-test-group">
+        <button type="submit" class="test-modal-button">Получить приглашение</button>
+      </div>
+
+      <div class="test-notify">
+        <label class="label-notify">
+          <input type="checkbox" id="notify" name="checkbox" required>
+          <span class="checkmark"></span>
+        </label>
+        <p class="test-notify-text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a href="#" class="test-notify-link">политикой конфиденциальности</a></p>
+      </div>
       `;
     }
   };
