@@ -743,7 +743,6 @@ body {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  margin-top: 1rem;
   gap: 1.25rem;
 }
 
@@ -833,7 +832,7 @@ body {
 }
 
 .test-modal-button {
-  width: 100%;
+  width: 15rem;
   height: 100%;
   padding: 0.2rem 1rem;
   cursor: pointer;
@@ -929,6 +928,12 @@ body {
   line-height: 0.875rem;
   text-decoration: underline;
   color: #fc00fc;
+}
+
+.last-test-button,
+.last-test-notify {
+  display: none;
+  justify-content: center;
 }
 
 @media (min-width: 62rem) {
