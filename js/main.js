@@ -17,12 +17,14 @@ const nextButton = document.querySelector(".test-modal-next-button");
 const prevButton = document.querySelector(".test-modal-prev-button");
 const lastTestButton = document.querySelector(".last-test-button");
 const lastTestNotify = document.querySelector(".last-test-notify");
-const exp = document.querySelector(".test-modal-footer");
+const testModalFooter = document.querySelector(".test-modal-footer");
 const sendButton = document.querySelector(".test-modal-button");
 
 const inputAnswer = document.querySelectorAll(".input-answer");
 const changeColor = document.querySelector(".answer-text");
 const labelCheck = document.querySelector(".label-answer");
+
+let counter = 0;
 
 const questions = [
   {
@@ -135,6 +137,8 @@ buttonTestModal.addEventListener("click", (event) => {
 closeTestModal.addEventListener("click", (event) => {
   event.preventDefault();
   testModal.classList.remove("test-modal-is-open");
+  counter++;
+  console.log(counter);
 });
 
 document.addEventListener("keyup", (event) => {
@@ -182,6 +186,9 @@ const playTest = () => {
 
       nextButton.style.display = "block";
       prevButton.style.display = "block";
+      testModalFooter.style.flexDirection = "row";
+      lastTestButton.style.display = "none";
+      lastTestNotify.style.display = "none";
     }
 
     if (numberQuestion === 0) {
@@ -191,6 +198,9 @@ const playTest = () => {
     if (numberQuestion === questions.length) {
       nextButton.style.display = "none";
       prevButton.style.display = "none";
+      testModalFooter.style.flexDirection = "column";
+      lastTestButton.style.display = "flex";
+      lastTestNotify.style.display = "flex";
 
       questionTitle.textContent = `Укажите ваше имя и номер телефона, чтобы получить приглашение на бесплатное занятие`;
 
@@ -217,10 +227,6 @@ const playTest = () => {
         <label class="test-input-label" for="test-user-phone">Номер телефона</label>
       </div>
       `;
-
-      exp.style.flexDirection = "column";
-      lastTestButton.style.display = "flex";
-      lastTestNotify.style.display = "flex";
     }
   };
 
