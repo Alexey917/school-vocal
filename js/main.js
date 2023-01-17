@@ -24,58 +24,13 @@ const inputAnswer = document.querySelectorAll(".input-answer");
 const changeColor = document.querySelector(".answer-text");
 const labelCheck = document.querySelector(".label-answer");
 
-let counter = 0;
-
-const questions = [
-  {
-    question: "Есть ли у вас опыт занятий вокалом?",
-    answers: [
-      {
-        title: "Нет опыта",
-      },
-      {
-        title: "Занимался(-ась) давно, хочу вспомнить и подтянуть вокал",
-      },
-      {
-        title: "Занимался(-ась), но не регулярно",
-      },
-    ],
-    type: "radio",
-  },
-  {
-    question: "Хотите научиться петь профессионально или для себя?",
-    answers: [
-      {
-        title: "Хочу петь для себя",
-      },
-      {
-        title: "Хочу петь профессионально",
-      },
-    ],
-    type: "radio",
-  },
-  {
-    question: "Сколько вам лет?",
-    answers: [
-      {
-        title: "14-17 лет",
-      },
-      {
-        title: "18-30 лет",
-      },
-      {
-        title: "31-40 лет",
-      },
-      {
-        title: "41-50 лет",
-      },
-      {
-        title: "50+ лет",
-      },
-    ],
-    type: "radio",
-  },
-];
+const getData = () => {
+  setTimeout(() => {
+    fetch("./questions.json")
+      .then((res) => res.json)
+      .then((obj) => playTest(obj.questions));
+  }, 1000);
+};
 
 const openMenu = (event) => {
   menu.classList.add("is-open");
@@ -131,7 +86,7 @@ mMenuToggle.addEventListener("click", (event) => {
 buttonTestModal.addEventListener("click", (event) => {
   event.preventDefault();
   testModal.classList.add("test-modal-is-open");
-  playTest();
+  getData();
 });
 
 closeTestModal.addEventListener("click", (event) => {
@@ -150,7 +105,7 @@ document.addEventListener("keyup", (event) => {
   }
 });
 
-const playTest = () => {
+const playTest = (questions) => {
   const finalAnswers = [];
   let numberQuestion = 0;
 
@@ -196,13 +151,9 @@ const playTest = () => {
     }
 
     if (numberQuestion === questions.length) {
-      nextButton.style.display = "none";
       prevButton.style.display = "none";
-      testModalFooter.style.flexDirection = "column";
-      lastTestButton.style.display = "flex";
-      lastTestNotify.style.display = "flex";
 
-      questionTitle.textContent = `Укажите ваше имя и номер телефона, чтобы получить приглашение на бесплатное занятие`;
+      questionTitle.textContent = `Укажите ваше имя`;
 
       formAnswers.innerHTML = `
       <div class="form-test-group">
@@ -215,7 +166,19 @@ const playTest = () => {
         />
         <label class="test-input-label" for="test-user-name">Имя</label>
       </div>
+      `;
+    }
 
+    if (numberQuestion === questions.length + 1) {
+      nextButton.style.display = "none";
+      prevButton.style.display = "none";
+      testModalFooter.style.flexDirection = "column";
+      lastTestButton.style.display = "flex";
+      lastTestNotify.style.display = "flex";
+
+      questionTitle.textContent = `Укажите ваше номер телефона, чтобы получить приглашение на бесплатное занятие`;
+
+      formAnswers.innerHTML = `
       <div class="form-test-group">
         <input 
          id="test-user-phone" 
@@ -228,6 +191,18 @@ const playTest = () => {
       </div>
       `;
     }
+
+    if (numberQuestion === questions.length + 2) {
+      testModalFooter.style.flexDirection = "row";
+      lastTestButton.style.display = "none";
+      lastTestNotify.style.display = "none";
+
+      questionTitle.textContent = `Спасибо за участие!`;
+
+      setTimeout(() => {
+        testModal.classList.remove("test-modal-is-open");
+      }, 2000);
+    }
   };
 
   renderQuestions(numberQuestion);
@@ -236,16 +211,28 @@ const playTest = () => {
     const obj = {};
 
     const inputs = [...formAnswers.elements].filter(
-      (input) => input.checked || input.id === "test-user-name"
+      (input) =>
+        input.checked ||
+        input.id === "test-user-name" ||
+        input.id === "test-user-phone"
     );
     console.log(inputs);
 
     inputs.forEach((input, index) => {
-      obj[`${index}_${questions[numberQuestion].question}`] = input.value;
+      if (numberQuestion >= 0 && numberQuestion <= questions.length - 1) {
+        obj[`${index}_${questions[numberQuestion].question}`] = input.value;
+      }
+
+      if (numberQuestion === questions.length) {
+        obj["Имя"] = input.value;
+      }
+
+      if (numberQuestion === questions.length + 1) {
+        obj["Номер телефона"] = input.value;
+      }
     });
 
     finalAnswers.push(obj);
-    console.log(finalAnswers);
   };
 
   nextButton.onclick = () => {
@@ -261,6 +248,8 @@ const playTest = () => {
 
   sendButton.onclick = () => {
     checkAnswer();
+    numberQuestion++;
+    renderQuestions(numberQuestion);
     console.log(finalAnswers);
   };
 };
