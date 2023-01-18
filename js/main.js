@@ -214,7 +214,7 @@ const playTest = () => {
     }
 
     if (numberQuestion === questions.length) {
-      prevButton.style.display = "none";
+      //prevButton.style.display = "none";
 
       questionTitle.textContent = `Укажите ваше имя`;
 
@@ -236,6 +236,7 @@ const playTest = () => {
       nextButton.style.display = "none";
       prevButton.style.display = "none";
       testModalFooter.style.flexDirection = "column";
+      testModalFooter.style.marginTop = "0";
       lastTestButton.style.display = "flex";
       lastTestNotify.style.display = "flex";
 
