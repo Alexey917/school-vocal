@@ -682,7 +682,7 @@ body {
   flex-direction: column;
   margin: auto;
   width: 40rem;
-  padding: 1.875rem;
+  padding: 2.5rem;
   background-color: rgb(244, 230, 242);
   opacity: 0;
   transform: translateY(-10%);
@@ -691,7 +691,7 @@ body {
 }
 
 .test-modal-is-open .test-modal-dialog {
-  transform: translateY(6.25rem);
+  transform: translateY(0);
   opacity: 1;
 }
 
@@ -720,6 +720,8 @@ body {
 }
 
 .question-title {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   text-align: center;
   font-style: normal;
   font-weight: 600;
@@ -742,6 +744,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-top: 1rem;
   width: 100%;
   gap: 1.25rem;
 }

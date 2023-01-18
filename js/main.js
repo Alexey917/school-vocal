@@ -24,13 +24,69 @@ const inputAnswer = document.querySelectorAll(".input-answer");
 const changeColor = document.querySelector(".answer-text");
 const labelCheck = document.querySelector(".label-answer");
 
-const getData = () => {
+/*const getData = () => {
+  formAnswers.textContent = "Загрузка...";
+
   setTimeout(() => {
     fetch("./questions.json")
-      .then((res) => res.json)
-      .then((obj) => playTest(obj.questions));
+      .then((res) => res.json())
+      .then((obj) => playTest(obj.questions))
+      .catch((err) => {
+        formAnswers.textContent = "Ошибка загрузки данных!";
+      });
   }, 1000);
-};
+};*/
+
+const questions = [
+  {
+    question: "Есть ли у вас опыт занятий вокалом?",
+    answers: [
+      {
+        title: "Нет опыта",
+      },
+      {
+        title: "Занимался(-ась) давно, хочу вспомнить и подтянуть вокал",
+      },
+      {
+        title: "Занимался(-ась), но не регулярно",
+      },
+    ],
+    type: "radio",
+  },
+  {
+    question: "Хотите научиться петь профессионально или для себя?",
+    answers: [
+      {
+        title: "Хочу петь для себя",
+      },
+      {
+        title: "Хочу петь профессионально",
+      },
+    ],
+    type: "radio",
+  },
+  {
+    question: "Сколько вам лет?",
+    answers: [
+      {
+        title: "14-17 лет",
+      },
+      {
+        title: "18-30 лет",
+      },
+      {
+        title: "31-40 лет",
+      },
+      {
+        title: "41-50 лет",
+      },
+      {
+        title: "50+ лет",
+      },
+    ],
+    type: "radio",
+  },
+];
 
 const openMenu = (event) => {
   menu.classList.add("is-open");
@@ -86,14 +142,21 @@ mMenuToggle.addEventListener("click", (event) => {
 buttonTestModal.addEventListener("click", (event) => {
   event.preventDefault();
   testModal.classList.add("test-modal-is-open");
-  getData();
+  //getData();
+  playTest();
 });
 
 closeTestModal.addEventListener("click", (event) => {
   event.preventDefault();
   testModal.classList.remove("test-modal-is-open");
-  counter++;
-  console.log(counter);
+});
+
+testModal.addEventListener("click", (event) => {
+  const target = event.target;
+
+  if (!target.classList.contains("testModalDialog")) {
+    target.classList.remove("test-modal-is-open");
+  }
 });
 
 document.addEventListener("keyup", (event) => {
@@ -105,7 +168,7 @@ document.addEventListener("keyup", (event) => {
   }
 });
 
-const playTest = (questions) => {
+const playTest = () => {
   const finalAnswers = [];
   let numberQuestion = 0;
 
