@@ -275,7 +275,7 @@ const playTest = () => {
     const obj = {};
 
     const inputs = [...formAnswers.elements].filter(
-      (input) =>
+      (input, index) =>
         input.checked ||
         input.id === "test-user-name" ||
         input.id === "test-user-phone"
@@ -297,6 +297,17 @@ const playTest = () => {
     });
 
     finalAnswers.push(obj);
+
+    // const uniqueAnswers = finalAnswers.filter(
+    //   (item, index) => finalAnswers.indexOf(item) === index
+    // );
+
+    // console.log(uniqueAnswers);
+
+    // const unique = [...formAnswers.elements].filter(
+    //   (x, i) => [...formAnswers.elements].indexOf(x) === i
+    // );
+    // console.log(unique);
   };
 
   nextButton.onclick = () => {
