@@ -1195,7 +1195,7 @@ input:-webkit-autofill {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 640px;
+    max-width: 40rem;
   }
 
   .social-list {
@@ -1203,22 +1203,22 @@ input:-webkit-autofill {
   }
 
   .header-wrapper {
-    background-position: center left -48px;
+    background-position: center left -3rem;
   }
 
   .header-title {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .header-content {
-    padding-left: 168px;
+    padding-left: 10.5rem;
   }
 
   .everyone-can-sing-wrapper {
     position: relative;
-    top: 624px;
-    max-width: 960px;
-    padding: 30px 78px 30px 98px;
+    top: 39rem;
+    max-width: 60rem;
+    padding: 1.875rem 4.875rem 1.875rem 6.125rem;
     background-color: rgba(255, 250, 250, 0.52);
   }
 
@@ -1226,24 +1226,24 @@ input:-webkit-autofill {
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -9.875rem;
-    width: 19.75rem;
-    height: 26rem;
-    border-radius: 10px;
+    margin-left: -158px;
+    width: 316px;
+    height: 416px;
+    border-radius: 0.625rem;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: center -32px;
-    object-position: center -32px;
+    -o-object-position: center -2rem;
+    object-position: center -2rem;
     z-index: 1;
     box-shadow: none;
   }
 
   .having-completed-training {
-    margin-top: 714.032px;
+    margin-top: 44.627rem;
   }
 
   .having-completed-training-content {
-    width: 640px;
+    width: 40rem;
   }
 
   .having-completed-training-learn {
@@ -1256,39 +1256,39 @@ input:-webkit-autofill {
   }
 
   .img-wrapper {
-    top: -48px;
-    right: 127px;
+    top: -3rem;
+    right: 7.9375rem;
   }
 
   .background-block {
-    top: 16px;
-    right: 47px;
+    top: 1rem;
+    right: 2.9375rem;
   }
 
   .at-the-end-of-school-content {
-    margin-right: -288px;
+    margin-right: -18rem;
   }
 
   .test-picture {
-    width: 364px;
-    border-radius: 10px 10px 0 0;
+    width: 22.75rem;
+    border-radius: 0.625rem 0.625rem 0 0;
   }
 
   .test-wrapper {
     flex-direction: column-reverse;
-    max-width: 364px;
+    max-width: 22.75rem;
   }
 }
 
-@media (max-width: 30.375rem) {
+@media (max-width: 486px) {
   .mobile-menu-toggle {
-    width: 41.6px;
+    width: 2.6rem;
     height: 100%;
-    padding: 8px;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 0.0625rem solid #fc00fc;
+    border: 1px solid #fc00fc;
   }
 
   #seventh-item,
@@ -1303,13 +1303,13 @@ input:-webkit-autofill {
 
   .mobile-logo-icon {
     display: block;
-    width: 6.25rem;
-    height: 0.75rem;
+    width: 100px;
+    height: 12px;
   }
 
   .container {
     position: relative;
-    max-width: 480px;
+    max-width: 30rem;
   }
 
   .mobile-social-list {
@@ -1319,12 +1319,12 @@ input:-webkit-autofill {
   .mobile-menu {
     position: absolute;
     right: 0;
-    top: 86.4px;
-    width: 220px;
-    padding: 8px;
+    top: 5.4rem;
+    width: 13.75rem;
+    padding: 0.5rem;
     background-color: rgb(244, 230, 242);
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     z-index: 1;
   }
 
@@ -1332,7 +1332,7 @@ input:-webkit-autofill {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    padding-left: 16px;
+    padding-left: 1rem;
     list-style: none;
     opacity: 0;
     transition: 1s;
@@ -1363,19 +1363,19 @@ input:-webkit-autofill {
   }
 
   #menu-seporator {
-    border-top: 0.0625rem solid rgba(252, 0, 252, 0.2);
-    padding-top: 16px;
+    border-top: 1px solid rgba(252, 0, 252, 0.2);
+    padding-top: 1rem;
   }
 
   .mobile-menu-list-item:not(:last-child) {
-    margin-bottom: 9.6px;
+    margin-bottom: 0.6rem;
   }
 
   .mobile-menu-link {
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     color: #fc00fc;
     text-decoration: none;
   }
@@ -1394,7 +1394,7 @@ input:-webkit-autofill {
 
   @-webkit-keyframes example {
     0% {
-      transform: translateY(-1.25rem);
+      transform: translateY(-20px);
       height: 10%;
     }
     100% {
@@ -1405,7 +1405,7 @@ input:-webkit-autofill {
 
   @keyframes example {
     0% {
-      transform: translateY(-1.25rem);
+      transform: translateY(-20px);
       height: 10%;
     }
     100% {
@@ -1415,50 +1415,50 @@ input:-webkit-autofill {
   }
 
   .header-content {
-    max-width: 404px;
-    padding-left: 104px;
+    max-width: 25.25rem;
+    padding-left: 6.5rem;
   }
 
   @-webkit-keyframes ring {
     0% {
-      width: 1.875rem;
-      height: 1.875rem;
+      width: 30px;
+      height: 30px;
       opacity: 1;
     }
     100% {
-      width: 7.5rem;
-      height: 7.5rem;
+      width: 120px;
+      height: 120px;
       opacity: 0;
     }
   }
 
   @keyframes ring {
     0% {
-      width: 1.875rem;
-      height: 1.875rem;
+      width: 30px;
+      height: 30px;
       opacity: 1;
     }
     100% {
-      width: 7.5rem;
-      height: 7.5rem;
+      width: 120px;
+      height: 120px;
       opacity: 0;
     }
   }
 
   .header-text-2,
   .header-text {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .header-button {
-    padding: 15px 32px;
+    padding: 0.9375rem 2rem;
   }
 
   .everyone-can-sing-wrapper {
     position: relative;
-    top: 624px;
-    max-width: 960px;
-    padding: 30px 78px 30px 98px;
+    top: 39rem;
+    max-width: 60rem;
+    padding: 1.875rem 4.875rem 1.875rem 6.125rem;
     background-color: rgba(255, 250, 250, 0.72);
   }
 
@@ -1466,91 +1466,91 @@ input:-webkit-autofill {
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -11.25rem;
-    width: 22.5rem;
-    height: 26rem;
-    border-radius: 10px;
+    margin-left: -180px;
+    width: 360px;
+    height: 416px;
+    border-radius: 0.625rem;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: center -32px;
-    object-position: center -32px;
+    -o-object-position: center -2rem;
+    object-position: center -2rem;
     z-index: 1;
     box-shadow: none;
   }
 
   .everyone-can-sing-title {
-    font-size: 20.8px;
+    font-size: 1.3rem;
   }
 
   .everyone-can-sing-text {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .learn-text {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .having-completed-training-content {
-    width: 480px;
+    width: 30rem;
   }
 
   .img-wrapper {
-    right: 31.008px;
-    width: 451.008px;
+    right: 1.938rem;
+    width: 28.188rem;
   }
 
   .background-block {
     right: 0;
-    width: 451.008px;
+    width: 28.188rem;
   }
 
   .at-the-end-of-school-content {
-    max-width: 480px;
+    max-width: 30rem;
     right: 0;
     margin-right: 0;
-    padding: 30px 17.2px 30px 17.2px;
+    padding: 1.875rem 1.075rem 1.875rem 1.075rem;
   }
 
   .at-the-end-of-school-text {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .at-the-end-of-school-title {
-    font-size: 17.4px;
+    font-size: 1.0875rem;
   }
 
   .test-title {
-    font-size: 17.4px;
+    font-size: 1.0875rem;
   }
 
   .button-test {
-    margin-top: 20.8px;
+    margin-top: 1.3rem;
   }
 
   .test-picture {
-    height: 418px;
+    height: 26.125rem;
   }
 
   .at-the-end-of-school-wrapper {
-    height: 1072px;
+    height: 67rem;
   }
 }
 
-@media (max-width: 23.4375rem) {
+@media (max-width: 375px) {
   .container {
-    max-width: 400px;
+    max-width: 25rem;
   }
 
   .header-content {
-    max-width: 372px;
-    padding-left: 72px;
+    max-width: 23.25rem;
+    padding-left: 4.5rem;
   }
 
   .everyone-can-sing-wrapper {
     position: relative;
-    top: 624px;
-    max-width: 960px;
-    padding: 30px 46px 30px 66px;
+    top: 39rem;
+    max-width: 60rem;
+    padding: 1.875rem 2.875rem 1.875rem 4.125rem;
     background-color: rgba(255, 250, 250, 0.72);
   }
 
@@ -1558,69 +1558,69 @@ input:-webkit-autofill {
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -9.375rem;
-    width: 18.75rem;
-    height: 26rem;
-    border-radius: 10px;
+    margin-left: -150px;
+    width: 300px;
+    height: 416px;
+    border-radius: 0.625rem;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: center -32px;
-    object-position: center -32px;
+    -o-object-position: center -2rem;
+    object-position: center -2rem;
     z-index: 1;
     box-shadow: none;
   }
 
   .everyone-can-sing-title {
-    font-size: 20.8px;
+    font-size: 1.3rem;
   }
 
   .everyone-can-sing-text {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .having-completed-training-content {
-    width: 400px;
+    width: 25rem;
   }
 
   .img-wrapper {
-    right: 31.008px;
-    width: 371.008px;
+    right: 1.938rem;
+    width: 23.188rem;
   }
 
   .at-the-end-of-school-img {
-    -o-object-position: top -112px left -64px;
-    object-position: top -112px left -64px;
+    -o-object-position: top -7rem left -4rem;
+    object-position: top -7rem left -4rem;
   }
 
   .background-block {
     right: 0;
-    width: 371.008px;
+    width: 23.188rem;
   }
 
   .at-the-end-of-school-content {
-    max-width: 400px;
+    max-width: 25rem;
     right: 0;
     margin-right: 0;
-    padding: 30px 33.2px 30px 33.2px;
+    padding: 1.875rem 2.075rem 1.875rem 2.075rem;
   }
 
   .at-the-end-of-school-text {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .at-the-end-of-school-title {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .at-the-end-of-school-button {
-    top: 400px;
+    top: 25rem;
   }
 
   .test {
-    margin-top: 96px;
+    margin-top: 6rem;
   }
 
   .test-title {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
