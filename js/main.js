@@ -219,7 +219,7 @@ const playTest = () => {
       questionTitle.textContent = `Укажите ваше имя`;
 
       formAnswers.innerHTML = `
-      <div class="form-test-group">
+      <div class="form-test-group form-name">
         <input 
          id="test-user-name" 
          type="text" 
@@ -236,7 +236,7 @@ const playTest = () => {
       nextButton.style.display = "none";
       prevButton.style.display = "none";
       testModalFooter.style.flexDirection = "column";
-      testModalFooter.style.marginTop = "0";
+      // testModalFooter.style.marginTop = "0";
       lastTestButton.style.display = "flex";
       lastTestNotify.style.display = "flex";
 
