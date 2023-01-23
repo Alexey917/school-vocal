@@ -956,8 +956,8 @@ input:-webkit-autofill {
   #sixth-item:hover,
   #eighth-item:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 100px;
-    box-shadow: 1.6px 1.6px 3.2px 1.6px #681173;
+    border-radius: 6.25rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem #681173;
   }
 
   .header-button:hover,
@@ -980,7 +980,7 @@ input:-webkit-autofill {
 
   .everyone-can-sing-button:hover {
     color: #ffffff;
-    box-shadow: 0 0 2.5rem 2.5rem #ec7804 inset;
+    box-shadow: 0 0 40px 40px #ec7804 inset;
   }
 
   .everyone-can-sing-img:hover {
@@ -989,12 +989,12 @@ input:-webkit-autofill {
 
   .learn-text:hover {
     transform: translateY(-0.1875rem);
-    box-shadow: 0 0.625rem 1.25rem #71ad19;
+    box-shadow: 0 10px 20px #71ad19;
   }
 
   .having-completed-training-title:hover {
     transform: translateY(-0.1875rem);
-    box-shadow: 0 0.625rem 1.25rem #71ad19;
+    box-shadow: 0 10px 20px #71ad19;
   }
 
   .having-completed-training-img:hover {
@@ -1015,7 +1015,7 @@ input:-webkit-autofill {
 
   .at-the-end-of-school-button:hover {
     transform: translateY(-0.1875rem);
-    box-shadow: 0 0.625rem 1.25rem rgba(252, 0, 252, 0.5);
+    box-shadow: 0 10px 20px rgba(252, 0, 252, 0.5);
   }
 
   .at-the-end-of-school-button:hover::after {
@@ -1029,7 +1029,7 @@ input:-webkit-autofill {
 
   .button-test-hover:hover::before {
     height: 100%;
-    border: 0.125rem solid #ec7804;
+    border: 2px solid #ec7804;
   }
 
   .answer-text:hover {
