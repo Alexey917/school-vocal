@@ -1060,7 +1060,7 @@ input:-webkit-autofill {
 
 @media (max-width: 1280px) {
   html {
-    font-size: 0.875rem;
+    font-size: 14px;
   }
 
   .everyone-can-sing-img {
@@ -1077,77 +1077,77 @@ input:-webkit-autofill {
 
 @media (max-width: 1024px) {
   html {
-    font-size: 0.8125rem;
+    font-size: 13px;
   }
 
   .everyone-can-sing-img {
-    top: 112px;
-    left: 16px;
-    width: 27.3125rem;
-    height: 27.3125rem;
+    top: 7rem;
+    left: 1rem;
+    width: 437px;
+    height: 437px;
   }
 
   .test-picture {
-    width: 478px;
+    width: 29.875rem;
   }
 }
 
 @media (max-width: 62rem) {
   html {
-    font-size: 0.75rem;
+    font-size: 12px;
   }
 
   .container {
-    max-width: 960px;
+    max-width: 60rem;
   }
 
   .header-wrapper {
-    background-position: center left -352px;
+    background-position: center left -22rem;
   }
 
   @-webkit-keyframes ring {
     0% {
-      width: 1.875rem;
-      height: 1.875rem;
+      width: 30px;
+      height: 30px;
       opacity: 1;
     }
     100% {
-      width: 9.375rem;
-      height: 9.375rem;
+      width: 150px;
+      height: 150px;
       opacity: 0;
     }
   }
 
   @keyframes ring {
     0% {
-      width: 1.875rem;
-      height: 1.875rem;
+      width: 30px;
+      height: 30px;
       opacity: 1;
     }
     100% {
-      width: 9.375rem;
-      height: 9.375rem;
+      width: 150px;
+      height: 150px;
       opacity: 0;
     }
   }
 
   .everyone-can-sing-wrapper {
     position: relative;
-    max-width: 960px;
-    padding: 30px 78px 30px 530px;
+    max-width: 60rem;
+    padding: 1.875rem 4.875rem 1.875rem 33.125rem;
   }
 
   .everyone-can-sing-img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 19.75rem;
-    height: 26rem;
-    border-radius: 10px;
+    width: 316px;
+    height: 416px;
+    border-radius: 0.625rem;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: center -32px;
-    object-position: center -32px;
+    -o-object-position: center -2rem;
+    object-position: center -2rem;
     z-index: 1;
     box-shadow: none;
   }
@@ -1157,7 +1157,7 @@ input:-webkit-autofill {
   }
 
   .having-completed-training {
-    margin-top: 106.032px;
+    margin-top: 6.627rem;
   }
 
   .having-completed-training-wrapper {
@@ -1165,35 +1165,35 @@ input:-webkit-autofill {
   }
 
   .having-completed-training-learn {
-    margin-top: 32px;
-    margin-left: 128px;
+    margin-top: 2rem;
+    margin-left: 8rem;
     justify-content: flex-start;
   }
 
   .img-wrapper {
-    right: 304px;
+    right: 19rem;
   }
 
   .background-block {
-    right: 224px;
+    right: 14rem;
   }
 
   .at-the-end-of-school-content {
-    top: 528px;
+    top: 33rem;
     right: 50%;
-    margin-right: -264px;
+    margin-right: -16.5rem;
   }
 
   .at-the-end-of-school-wrapper {
-    height: 1104px;
+    height: 69rem;
   }
 
   .test {
-    margin-top: 48px;
+    margin-top: 3rem;
   }
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
   .container {
     max-width: 640px;
   }
