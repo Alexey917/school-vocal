@@ -943,6 +943,14 @@ input:-webkit-autofill {
   justify-content: center;
 }
 
+.form-name {
+  margin-bottom: 3rem;
+}
+
+.answers-item:last-child {
+  margin-bottom: 3rem;
+}
+
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
     color: #681173;
@@ -1073,6 +1081,12 @@ input:-webkit-autofill {
   .test-content {
     margin: auto;
   }
+
+  .checkmark {
+    top: 19px;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1089,6 +1103,11 @@ input:-webkit-autofill {
 
   .test-picture {
     width: 29.875rem;
+  }
+
+  .checkmark {
+    top: 17px;
+    left: 4.5px;
   }
 }
 
@@ -1190,6 +1209,10 @@ input:-webkit-autofill {
 
   .test {
     margin-top: 3rem;
+  }
+
+  .checkmark {
+    top: 15px;
   }
 }
 
@@ -1539,28 +1562,20 @@ input:-webkit-autofill {
     display: flex;
   }
 
-  .answers-item:last-child {
-    margin-bottom: 3rem;
-  }
-
   .test-modal-dialog {
     width: 23rem;
   }
 
   .checkmark {
-    top: 16.4px;
-    left: 4.7px;
-    width: 1.15rem;
-    height: 1.15rem;
+    top: 15px;
+    left: 4px;
+    width: 1.25rem;
+    height: 1.25rem;
   }
 
   .label-notify .checkmark:after {
     left: 3px;
     top: -2px;
-  }
-
-  .form-name {
-    margin-bottom: 3rem;
   }
 }
 
