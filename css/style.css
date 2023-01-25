@@ -888,8 +888,8 @@ input:-webkit-autofill {
   background-color: rgb(244, 230, 242);
   border: 1px solid #fc00fc;
   border-radius: 4px;
-  width: 1rem;
-  height: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
   margin-left: -0.4rem;
 }
 
@@ -917,10 +917,10 @@ input:-webkit-autofill {
 }
 
 .label-notify .checkmark:after {
-  left: 4px;
+  left: 5px;
   top: -1px;
-  width: 5px;
-  height: 10px;
+  width: 6px;
+  height: 12px;
   border: solid #fc00fc;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
@@ -1084,12 +1084,12 @@ input:-webkit-autofill {
 
   .checkmark {
     top: 19px;
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.25rem;
+    height: 1.25rem;
   }
 
   .label-notify .checkmark:after {
-    top: -0.5px;
+    top: -2px;
   }
 }
 
@@ -1110,8 +1110,13 @@ input:-webkit-autofill {
   }
 
   .checkmark {
-    top: 18px;
+    top: 17px;
     left: 4.5px;
+  }
+
+  .label-notify .checkmark:after {
+    top: -3px;
+    left: 4px;
   }
 }
 
@@ -1216,11 +1221,13 @@ input:-webkit-autofill {
   }
 
   .checkmark {
-    top: 15px;
+    top: 16px;
   }
 
   .label-notify .checkmark:after {
     top: -2px;
+    width: 5px;
+    height: 11px;
   }
 }
 
@@ -1575,15 +1582,15 @@ input:-webkit-autofill {
   }
 
   .checkmark {
-    top: 15px;
+    top: 16px;
     left: 4px;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1.3rem;
+    height: 1.3rem;
   }
 
   .label-notify .checkmark:after {
     left: 3px;
-    top: -1.3px;
+    top: -2px;
   }
 }
 
