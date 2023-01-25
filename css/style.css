@@ -881,8 +881,8 @@ input:-webkit-autofill {
 
 .checkmark {
   position: absolute;
-  top: 22px;
-  left: 6px;
+  top: 25px;
+  left: 5px;
   background-repeat: no-repeat;
   background-position: left 2px top 3px;
   background-color: rgb(244, 230, 242);
@@ -1110,7 +1110,7 @@ input:-webkit-autofill {
   }
 
   .checkmark {
-    top: 17px;
+    top: 18px;
     left: 4.5px;
   }
 }
