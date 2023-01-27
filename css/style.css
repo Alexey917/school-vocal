@@ -1014,6 +1014,8 @@ input:-webkit-autofill {
 }
 
 .back-card {
+  display: flex;
+  flex-direction: column;
   transform: rotateY(180deg);
   background-image: url("../img/fortopiano.webp");
   background-repeat: no-repeat;
@@ -1057,19 +1059,68 @@ input:-webkit-autofill {
   text-shadow: 0.2rem 0.2rem 1rem #faf472, 0.2rem 0.2rem 1rem #faf472;
 }
 
+.card-button {
+  margin-top: 1.125rem;
+  min-width: 9.9375rem;
+  padding: 0.9375rem 2.5313rem;
+  background: #faf472;
+  border: 0.0813rem solid #faf472;
+  border-radius: 6.25rem;
+  box-shadow: 12px 12px 24px #faf472;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375rem;
+  color: #681173;
+}
+
+.card-button::before {
+  content: "";
+  border-radius: 6.25rem;
+  min-width: 3.938rem;
+  padding: 2rem 3.3rem;
+  border: 0.275rem solid #faf472;
+  box-shadow: 0 0 60px #faf472;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
 .front-card-guitar {
   background-image: url("../img/guitar.webp");
 }
 
-.no-webp .course-card-guitar {
+.no-webp .front-card-guitar {
   background-image: url("../img/guitar.jpg");
 }
 
-.course-card-vocal {
+.back-card-guitar {
+  background-image: url("../img/guitar.webp");
+}
+
+.no-webp .back-card-guitar {
+  background-image: url("../img/guitar.jpg");
+}
+
+.front-card-vocal {
   background-image: url("../img/vocal.webp");
 }
 
-.no-webp .course-card-vocal {
+.no-webp .front-card-vocal {
+  background-image: url("../img/vocal.jpg");
+}
+
+.back-card-vocal {
+  background-image: url("../img/vocal.webp");
+}
+
+.no-webp .back-card-vocal {
   background-image: url("../img/vocal.jpg");
 }
 
@@ -1091,13 +1142,17 @@ input:-webkit-autofill {
   }
 
   .header-button:hover,
-  .header-button:focus {
+  .header-button:focus,
+  .card-button:hover,
+  .card-button:focus {
     color: #313133;
     transform: translateY(-0.375rem);
   }
 
   .header-button:hover::before,
-  .header-button:focus::before {
+  .header-button:focus::before,
+  .card-button:hover::before,
+  .card-button:focus::before {
     opacity: 1;
   }
 
