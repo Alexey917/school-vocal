@@ -978,18 +978,58 @@ input:-webkit-autofill {
   justify-content: space-between;
 }
 
-.front-card {
+.course-card {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20rem;
-  height: 20rem;
   border-radius: 40px;
+  perspective: 1000px;
+}
+
+.front-card,
+.back-card {
+  /* flip 3d */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+
+.front-card {
   background-image: url("../img/fortopiano.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
+}
+
+.back-card {
+  transform: rotateY(180deg);
+  background-image: url("../img/fortopiano.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
+}
+
+.back-card::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  z-index: -1;
 }
 
 .no-webp .front-card {
@@ -1008,19 +1048,28 @@ input:-webkit-autofill {
   box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
 }
 
+.card-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.625rem;
+  color: #faf472;
+  text-shadow: 0.2rem 0.2rem 1rem #faf472, 0.2rem 0.2rem 1rem #faf472;
+}
+
 .front-card-guitar {
   background-image: url("../img/guitar.webp");
 }
 
-.no-webp .front-card-guitar {
+.no-webp .course-card-guitar {
   background-image: url("../img/guitar.jpg");
 }
 
-.front-card-vocal {
+.course-card-vocal {
   background-image: url("../img/vocal.webp");
 }
 
-.no-webp .front-card-vocal {
+.no-webp .course-card-vocal {
   background-image: url("../img/vocal.jpg");
 }
 
@@ -1136,6 +1185,14 @@ input:-webkit-autofill {
       0 0 60px #fc00fc;
     background-color: #fc00fc;
     color: #ffffff;
+  }
+
+  .course-card:hover .front-card {
+    transform: rotateY(180deg);
+  }
+
+  .course-card:hover .back-card {
+    transform: rotateY(360deg);
   }
 }
 
