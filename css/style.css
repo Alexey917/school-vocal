@@ -1124,6 +1124,10 @@ input:-webkit-autofill {
   background-image: url("../img/vocal.jpg");
 }
 
+.for-mobile {
+  display: none;
+}
+
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
     color: #681173;
@@ -1418,6 +1422,48 @@ input:-webkit-autofill {
     top: -2px;
     width: 5px;
     height: 11px;
+  }
+
+  .courses-wrapper {
+    flex-direction: column;
+  }
+
+  .course-card {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .course-card:not(:last-child) {
+    margin-bottom: 4.5rem;
+  }
+
+  .front-card {
+    flex-direction: column;
+  }
+
+  .card-title {
+    display: none;
+    margin-bottom: 0.8438rem;
+    font-size: 1.5rem;
+  }
+
+  .for-mobile {
+    display: flex;
+  }
+
+  .card-text {
+    padding: 0.875rem;
+    color: #fc00fc;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
+  }
+
+  .card-button {
+    color: #ffffff;
+    border: 0.0813rem solid #fc00fc;
+    background: #fc00fc;
+    box-shadow: 12px 12px 24px #fc00fc;
   }
 }
 
