@@ -1552,6 +1552,11 @@ input:-webkit-autofill {
     flex-direction: column-reverse;
     max-width: 22.75rem;
   }
+
+  .course-card {
+    width: 25rem;
+    height: 25rem;
+  }
 }
 
 @media (max-width: 486px) {
@@ -1828,6 +1833,18 @@ input:-webkit-autofill {
     left: 3px;
     top: -2px;
   }
+
+  .courses-title {
+    font-size: 1.0875rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1915,6 +1932,18 @@ input:-webkit-autofill {
   }
 
   .test-title {
+    font-size: 1rem;
+  }
+
+  .courses-title {
+    font-size: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
     font-size: 1rem;
   }
 }
