@@ -1135,6 +1135,51 @@ input:-webkit-autofill {
   display: none;
 }
 
+.prices {
+  margin-top: 6rem;
+}
+
+.prices-container {
+  display: flex;
+  justify-content: center;
+}
+
+.prices-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  max-width: 800px;
+  border-radius: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.prices-info {
+  max-width: 25.8rem;
+  margin-right: 6.25rem;
+}
+
+.prices-info-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2875rem;
+  line-height: 3.1875rem;
+  text-transform: uppercase;
+  color: #71ad19;
+}
+
+.prices-info-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #3d3935;
+}
+
+.prices-form {
+  max-width: 21.875rem;
+}
+
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
     color: #681173;
