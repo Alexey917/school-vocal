@@ -1039,6 +1039,8 @@ input:-webkit-autofill {
 }
 
 .card-title {
+  text-align: center;
+  max-width: 16.875rem;
   padding: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -1051,6 +1053,8 @@ input:-webkit-autofill {
 }
 
 .card-text {
+  text-align: center;
+  max-width: 16.875rem;
   font-style: normal;
   font-weight: 600;
   font-size: 1.2rem;
@@ -1061,7 +1065,9 @@ input:-webkit-autofill {
 
 .card-button {
   margin-top: 1.125rem;
+  margin-bottom: 0.825rem;
   min-width: 9.9375rem;
+  max-width: 16.875rem;
   padding: 0.9375rem 2.5313rem;
   background: #faf472;
   border: 0.0813rem solid #faf472;
