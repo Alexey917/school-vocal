@@ -1154,7 +1154,7 @@ input:-webkit-autofill {
 }
 
 .prices-info {
-  max-width: 25.8rem;
+  max-width: 20.8rem;
   margin-right: 6.25rem;
 }
 
@@ -1169,6 +1169,7 @@ input:-webkit-autofill {
 }
 
 .prices-info-text {
+  margin-top: 0;
   font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
@@ -1178,6 +1179,56 @@ input:-webkit-autofill {
 
 .prices-form {
   max-width: 21.875rem;
+}
+
+.prices-form-title {
+  margin-top: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #71ad19;
+}
+
+.prices-input-group {
+  position: relative;
+  width: 15rem;
+  height: 3.125rem;
+  margin-top: 1.875rem;
+}
+
+.prices-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem 1.875rem;
+  border: 1px solid #71ad19;
+  border-radius: 0.625rem;
+  background-color: inherit;
+  color: #71ad19;
+}
+
+.prices-input:focus {
+  box-shadow: 0 0 5px #71ad19, 0 0 25px #71ad19, 0 0 50px #71ad19,
+    0 0 200px #71ad19;
+  outline: 0;
+}
+
+.prices-input:focus ~ .prices-label,
+.prices-input:not(:placeholder-shown).prices-input:not(:focus) ~ .prices-label {
+  display: none;
+}
+
+.prices-label {
+  position: absolute;
+  cursor: text;
+  top: 1.07rem;
+  left: 1.3rem;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: #71ad19;
 }
 
 @media (min-width: 992px) {

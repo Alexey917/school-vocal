@@ -556,11 +556,6 @@
               урока и общения с вами наши педагоги могут предложить вам на выбор
               курс обучения и озвучит его стоимость.
             </p>
-
-            <!-- <p class="prices-info-text">
-              Только после пробного урока и общения с вами наши педагоги могут
-              предложить вам на выбор курс обучения и озвучит его стоимость.
-            </p> -->
           </div>
 
           <form action="#" class="prices-form">
@@ -571,8 +566,37 @@
 
             <div class="prices-input-group-wrapper">
               <div class="prices-input-group">
+                <input
+                  type="text"
+                  class="prices-input"
+                  id="prices-user-name"
+                  name="user-name"
+                  placeholder=" "
+                />
+                <label for="prices-user-name" class="prices-label">Имя</label>
+              </div>
+
+              <div class="prices-input-group">
                 <input type="text" class="prices-input" />
                 <label for="" class="prices-label"></label>
+              </div>
+
+              <div class="prices-form-footer">
+                <button class="prices-button">Получить приглашение</button>
+              </div>
+
+              <div class="prices-notify">
+                <label class="prices-notify-label">
+                  <input type="ckeckbox" class="prices-checkbox" />
+                  <span class="prices-ckeckmark"></span>
+                </label>
+                <p class="prices-notify-text">
+                  Нажимая на кнопку, вы соглашаетесь на обработку персональных
+                  данных и
+                  <a href="#" class="prices-notify-link"
+                    >политикой конфиденциальности</a
+                  >
+                </p>
               </div>
             </div>
           </form>
