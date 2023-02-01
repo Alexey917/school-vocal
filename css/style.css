@@ -1231,6 +1231,61 @@ input:-webkit-autofill {
   color: #71ad19;
 }
 
+.prices-form-button {
+  margin-top: 1.875rem;
+}
+
+.prices-button {
+  width: 15rem;
+  height: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.625rem;
+
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #71ad19;
+  border: 1px solid #71ad19;
+  text-align: center;
+  border-radius: 0.625rem;
+  color: #ffffff;
+  padding: 0.6875rem 1rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.prices-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  transform: translateX(-4rem) skewX(-45deg);
+  transition: all 0.1s;
+  animation: move-light 4s 0.1s ease-in-out infinite;
+}
+
+@keyframes move-light {
+  0% {
+    left: -50px;
+    margin-left: 0;
+  }
+
+  30% {
+    left: 100%;
+    margin-left: 85px;
+  }
+
+  100% {
+    left: 100%;
+    margin-left: 85px;
+  }
+}
+
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
     color: #681173;
