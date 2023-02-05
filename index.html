@@ -425,7 +425,7 @@
           <h2 class="question-title"></h2>
 
           <div class="answers">
-            <form action="#" class="form-answers" id="formAnswers">
+            <form action="#" class="form form-answers" id="formAnswers">
               <!-- <div class="answers-item">
                 <input
                   type="radio"
@@ -558,7 +558,7 @@
             </p>
           </div>
 
-          <form action="#" class="prices-form">
+          <form action="handler.php" method="POST" class=" form prices-form">
             <h4 class="prices-form-title">
               Укажите ваше имя и номер телефона, чтобы получить приглашение на
               бесплатное занятие
@@ -570,7 +570,7 @@
                   type="text"
                   class="prices-input"
                   id="prices-user-name"
-                  name="user-name"
+                  name="username"
                   placeholder=" "
                 />
                 <label for="prices-user-name" class="prices-label">Имя</label>
@@ -581,7 +581,7 @@
                   type="text"
                   class="prices-input"
                   id="prices-user-phone"
-                  name="user-phone"
+                  name="userphone"
                   placeholder=" "
                 />
                 <label for="prices-user-phone" class="prices-label"
@@ -612,7 +612,8 @@
       </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+    <script src="js/just-validate.production.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -1146,7 +1146,7 @@ input:-webkit-autofill {
 
 .prices-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding: 4rem;
   max-width: 800px;
   border-radius: 2.5rem;

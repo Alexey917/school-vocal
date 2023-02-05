@@ -224,7 +224,7 @@ const playTest = () => {
          id="test-user-name" 
          type="text" 
          class="test-input" 
-         name="user-name" 
+         name="username" 
          placeholder=" "
         />
         <label class="test-input-label" for="test-user-name">Имя</label>
@@ -248,7 +248,7 @@ const playTest = () => {
          id="test-user-phone" 
          type="text" 
          class="test-input" 
-         name="user-name" 
+         name="userphone" 
          placeholder=" "
         />
         <label class="test-input-label" for="test-user-phone">Номер телефона</label>
@@ -338,3 +338,39 @@ const playTest = () => {
 });*/
 
 //inputItem.classList.add("answer-text-sected");
+
+const forms = document.querySelectorAll(".form");
+
+forms.forEach((form) => {
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: "is-invalid",
+  });
+  validation
+    .addField("[name=username]", [
+      {
+        rule: "required",
+        errorMessage: "Укажите имя",
+      },
+      {
+        rule: "minLength",
+        value: 2,
+        errorMessage: "Слишком короткое имя",
+      },
+      {
+        rule: "maxLength",
+        value: 20,
+        errorMessage: "Слишком длинное имя",
+      },
+    ])
+    .addField("[name=userphone]", [
+      {
+        rule: "required",
+        errorMessage: "Укажите телефон",
+      },
+      {
+        rule: "maxLength",
+        value: 11,
+        errorMessage: "Некорректный номер",
+      },
+    ]);
+});
