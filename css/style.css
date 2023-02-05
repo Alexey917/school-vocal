@@ -1286,6 +1286,55 @@ input:-webkit-autofill {
   }
 }
 
+.prices-notify {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 1.875rem;
+}
+
+.prices-notify-label label {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.prices-ckeckmark {
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  background-repeat: no-repeat;
+  background-position: left 2px top 3px;
+  background-color: rgb(244, 230, 242);
+  border: 1px solid #71ad19;
+  border-radius: 4px;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: -0.4rem;
+}
+
+.prices-notify-text {
+  width: 12.5rem;
+  margin-left: 1rem;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  color: #71ad19;
+}
+
+.prices-notify-label input:checked ~ .prices-ckeckmark {
+  background-color: #ffffff;
+}
+
+.prices-ckeckmark {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
     color: #681173;
