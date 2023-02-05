@@ -1301,9 +1301,9 @@ input:-webkit-autofill {
   width: 0;
 }
 
-.prices-ckeckmark {
+.prices-checkmark {
   position: absolute;
-  top: 25px;
+  top: 21px;
   left: 5px;
   background-repeat: no-repeat;
   background-position: left 2px top 3px;
@@ -1324,14 +1324,38 @@ input:-webkit-autofill {
   color: #71ad19;
 }
 
-.prices-notify-label input:checked ~ .prices-ckeckmark {
+.prices-notify-label input:checked ~ .prices-checkmark {
   background-color: #ffffff;
 }
 
-.prices-ckeckmark {
+.prices-checkmark:after {
   content: "";
   position: absolute;
   display: none;
+}
+
+.prices-notify-label input:checked ~
+.prices-checkmark:after {
+  display: block;
+}
+
+.prices-notify-label .prices-checkmark:after {
+  left: 5px;
+  top: -1px;
+  width: 6px;
+  height: 12px;
+  border: solid #71ad19;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.prices-notify-link {
+  width: 12.5rem;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  text-decoration: underline;
+  color: #71ad19;
 }
 
 
