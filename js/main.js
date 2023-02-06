@@ -369,7 +369,7 @@ forms.forEach((form) => {
       },
       {
         rule: "maxLength",
-        value: 11,
+        value: 18,
         errorMessage: "Некорректный номер",
       },
     ])
@@ -391,7 +391,7 @@ forms.forEach((form) => {
             thisForm.reset();
             alert("Форма отправлена!");
           } else {
-            alert("Ошибка. Текст ошибки: ".response.statusText);
+            alert("Ошибка. Текст ошибки: ", response.statusText);
           }
         });
       };
