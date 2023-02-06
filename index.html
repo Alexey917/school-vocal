@@ -425,7 +425,7 @@
           <h2 class="question-title"></h2>
 
           <div class="answers">
-            <form action="#" class="form form-answers" id="formAnswers">
+            <form action="#" class="form-answers" id="formAnswers">
               <!-- <div class="answers-item">
                 <input
                   type="radio"
@@ -558,7 +558,7 @@
             </p>
           </div>
 
-          <form action="handler.php" method="POST" class=" form prices-form">
+          <form action="handler.php" method="POST" class=" form prices-form" id="priceForm">
             <h4 class="prices-form-title">
               Укажите ваше имя и номер телефона, чтобы получить приглашение на
               бесплатное занятие
@@ -590,12 +590,13 @@
               </div>
 
               <div class="prices-form-button">
-                <a href="#" class="prices-button">Получить приглашение</a>
+                <button class="prices-button">Получить приглашение</button>
               </div>
 
               <div class="prices-notify">
                 <label class="prices-notify-label">
-                  <input type="checkbox" class="prices-checkbox" />
+                  <input type="checkbox" class="prices-checkbox"
+                  name="checkbox" />
                   <span class="prices-checkmark"></span>
                 </label>
                 <p class="prices-notify-text">

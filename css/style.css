@@ -1358,6 +1358,21 @@ input:-webkit-autofill {
   color: #71ad19;
 }
 
+.prices-input.is-invalid {
+  border: 1px solid red;
+  box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red,
+    0 0 200px red;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: -1.5rem;
+  left: 1rem;
+  display: inline-block;
+  font-size: 1rem;
+
+}
+
 
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
