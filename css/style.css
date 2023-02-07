@@ -1161,10 +1161,11 @@ input:-webkit-autofill {
 
 .prices-info-title {
   margin: 0;
+  margin-bottom: 1rem;
   font-style: normal;
   font-weight: 600;
   font-size: 1.2875rem;
-  line-height: 3.1875rem;
+  line-height: 2.5875rem;
   text-transform: uppercase;
   color: #71ad19;
 }
@@ -1278,12 +1279,12 @@ input:-webkit-autofill {
 
   30% {
     left: 100%;
-    margin-left: 85px;
+    margin-left: 100px;
   }
 
   100% {
     left: 100%;
-    margin-left: 85px;
+    margin-left: 100px;
   }
 }
 
