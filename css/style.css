@@ -1532,6 +1532,21 @@ input:-webkit-autofill {
   .label-notify .checkmark:after {
     top: -2px;
   }
+
+  .prices-form {
+    max-width: 18.875rem;
+  }
+
+  .prices-checkmark {
+    top: 19px;
+    left: 3px;
+  }
+
+  .prices-notify-label .prices-checkmark:after {
+    left: 3px;
+    top: -2px;
+  }
+  
 }
 
 @media (max-width: 1024px) {
@@ -1559,6 +1574,15 @@ input:-webkit-autofill {
     top: -3px;
     left: 4px;
   }
+
+  .prices-form {
+    max-width: 15.875rem;
+  }
+
+  .prices-checkmark {
+    top: 17px;
+    left: 5px;
+}
 }
 
 @media (max-width: 992px) {
@@ -1712,6 +1736,16 @@ input:-webkit-autofill {
     background: #fc00fc;
     box-shadow: 12px 12px 24px #fc00fc;
   }
+
+  .prices-checkmark {
+    top: 15.4px;
+    left: 5px;
+  }
+
+  .prices-notify-label .prices-checkmark:after {
+    width: 5px;
+    height: 11px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1803,6 +1837,45 @@ input:-webkit-autofill {
   .course-card {
     width: 25rem;
     height: 25rem;
+  }
+
+  .prices-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .prices-info {
+    margin-right: 0;
+  }
+
+  .prices-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20.8rem;
+  }
+
+  .prices-form-title {
+    text-align: center;
+    margin-top: 1.875rem;
+  }
+
+  .prices-checkmark {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .prices-notify-label .prices-checkmark:after {
+    left: 4px;
+    height: 12px;
+  }
+
+  .prices-info-title {
+    text-align: center;
+  }
+
+  .prices-info-text {
+    text-align: center;
   }
 }
 
@@ -2091,6 +2164,18 @@ input:-webkit-autofill {
 
   .card-text {
     font-size: 1.1rem;
+  }
+
+  .prices-info-title {
+    font-size: 1.0875rem;
+  }
+
+  .prices-info-text {
+    font-size: 1rem;
+  }
+
+  .prices-form-title {
+    font-size: 1rem;
   }
 }
 
