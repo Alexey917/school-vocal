@@ -1268,7 +1268,25 @@ input:-webkit-autofill {
   background-color: rgba(255, 255, 255, 0.6);
   transform: translateX(-4rem) skewX(-45deg);
   transition: all 0.1s;
-  animation: move-light 4s 0.1s ease-in-out infinite;
+  -webkit-animation: move-light 4s 0.1s ease-in-out infinite;
+          animation: move-light 4s 0.1s ease-in-out infinite;
+}
+
+@-webkit-keyframes move-light {
+  0% {
+    left: -50px;
+    margin-left: 0;
+  }
+
+  30% {
+    left: 100%;
+    margin-left: 100px;
+  }
+
+  100% {
+    left: 100%;
+    margin-left: 100px;
+  }
 }
 
 @keyframes move-light {
