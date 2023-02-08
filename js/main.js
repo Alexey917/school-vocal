@@ -468,3 +468,14 @@ document.addEventListener("input", (e) => {
     input.value = result;
   }
 });
+
+const swiper = new Swiper("#teachers-swiper", {
+  speed: 400,
+  autoHeight: true,
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

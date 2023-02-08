@@ -1390,7 +1390,30 @@ input:-webkit-autofill {
   left: 1rem;
   display: inline-block;
   font-size: 1rem;
+}
 
+.teachers {
+  margin-top: 6rem;
+}
+
+.teachers-title {
+  width: 20rem;
+  margin: auto;
+  margin-bottom: 6rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  padding-right: 1.875rem;
+  padding-left: 1.875rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2875rem;
+  line-height: 3.1875rem;
+  text-transform: uppercase;
+  color: rgb(252, 0, 252);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
 }
 
 
