@@ -1458,6 +1458,10 @@ input:-webkit-autofill {
   text-shadow: 0.2rem 0.2rem 1rem #faf472, 0.2rem 0.2rem 1rem #faf472;
 }
 
+.third-teacher {
+  object-position: 0 -1.7px;
+}
+
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
     color: #681173;
