@@ -1399,23 +1399,64 @@ input:-webkit-autofill {
 .teachers-title {
   width: 20rem;
   margin: auto;
-  margin-bottom: 6rem;
-  padding-top: 0.875rem;
+  margin-bottom: 0rem;
+  /* padding-top: 0.875rem;
   padding-bottom: 0.875rem;
   padding-right: 1.875rem;
-  padding-left: 1.875rem;
+  padding-left: 1.875rem; */
   text-align: center;
   font-style: normal;
   font-weight: 600;
   font-size: 1.2875rem;
   line-height: 3.1875rem;
   text-transform: uppercase;
-  color: rgb(252, 0, 252);
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
+  color: #faf472;
+  /* border-radius: 20px; */
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  /* box-shadow: 0.2rem 0.2rem 1rem #fc00fc; */
+  text-shadow: 0.2rem 0.2rem 1rem #faf472, 0.2rem 0.2rem 1rem #faf472;
 }
 
+.teacher-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teachers-picture {
+  margin-top: 6.875rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0 0;
+  box-shadow: 0 0 5px #faf472 , 0 0 25px #faf472 , 0 0 50px #faf472,
+  0 0 200px #faf472;
+    /* #faf472 */
+}
+
+.teachers-name {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.625rem;
+  color: #faf472;
+  text-shadow: 0.2rem 0.2rem 1rem #faf472, 0.2rem 0.2rem 1rem #faf472;
+}
+
+.teachers-text {
+  max-width: 45.25rem;
+  margin-top: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  text-align: center;
+  color: #faf472;
+  text-shadow: 0.2rem 0.2rem 1rem #faf472, 0.2rem 0.2rem 1rem #faf472;
+}
 
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
