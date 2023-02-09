@@ -1418,9 +1418,11 @@ input:-webkit-autofill {
 }
 
 .teacher-info {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100%;
 }
 
 .teachers-picture {
@@ -1460,6 +1462,21 @@ input:-webkit-autofill {
 
 .third-teacher {
   object-position: 0 -1.7px;
+}
+
+.fifth-teacher {
+  object-position: -45px 0;
+}
+
+.slider-button-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.teacher-arrow-next-icon {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 @media (min-width: 992px) {
