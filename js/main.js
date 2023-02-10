@@ -471,6 +471,7 @@ document.addEventListener("input", (e) => {
 
 const swiper = new Swiper("#teachers-swiper", {
   speed: 400,
+  slidesPerView: 1,
   autoHeight: true,
   loop: true,
 

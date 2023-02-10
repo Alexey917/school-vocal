@@ -1468,16 +1468,18 @@ input:-webkit-autofill {
   object-position: -45px 0;
 }
 
-.slider-button-next {
+.slider-buttons {
   position: absolute;
-  right: 0;
   top: 50%;
+  transform: translateY(-50%);
 }
 
-.teacher-arrow-next-icon {
-  width: 1.25rem;
-  height: 1.25rem;
+.teacher-arrow-next-icon,
+.teacher-arrow-prev-icon{
+  width: 2.5rem;
+  height: 2.5rem;
 }
+
 
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
