@@ -1479,12 +1479,28 @@ input:-webkit-autofill {
   z-index: 1;
 }
 
+.slider-button-prev,
+.slider-button-next {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
 .teacher-arrow-next-icon,
 .teacher-arrow-prev-icon{
   width: 2.5rem;
   height: 2.5rem;
+  border-radius: 50%;
+  padding: 2.5rem;
+  box-shadow: 0 0 5px #faf472 , 0 0 25px #faf472 , 0 0 50px #faf472,
+  0 0 200px #faf472;
 }
 
+/* border-radius: 50%;
+  padding: 1.875rem;
+  box-shadow: 0 0 5px #faf472 , 0 0 25px #faf472 , 0 0 50px #faf472,
+  0 0 200px #faf472; */
 
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
