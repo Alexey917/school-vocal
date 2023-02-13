@@ -1430,8 +1430,10 @@ input:-webkit-autofill {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
   box-shadow: 0 0 5px #faf472 , 0 0 25px #faf472 , 0 0 50px #faf472,
   0 0 200px #faf472;
     /* #faf472 */
@@ -1463,11 +1465,13 @@ input:-webkit-autofill {
 }
 
 .third-teacher {
-  object-position: 0 -1.7px;
+  -o-object-position: 0 -1.7px;
+     object-position: 0 -1.7px;
 }
 
 .fifth-teacher {
-  object-position: -45px 0;
+  -o-object-position: -45px 0;
+     object-position: -45px 0;
 }
 
 .slider-buttons {
@@ -1904,7 +1908,8 @@ input:-webkit-autofill {
   }
 
   .fifth-teacher {
-    object-position: -29px 0;
+    -o-object-position: -29px 0;
+       object-position: -29px 0;
   }
 }
 
