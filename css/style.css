@@ -1440,10 +1440,12 @@ input:-webkit-autofill {
 .teachers-name {
   margin-top: 3rem;
   margin-bottom: 0;
+  width: 20rem;
+  text-align: center;
   font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
-  line-height: 1.625rem;
+  line-height: 2.325rem;
   color: #faf472;
   text-shadow: 0.2rem 0.2rem 1rem #faf472, 0.2rem 0.2rem 1rem #faf472;
 }
@@ -1478,29 +1480,43 @@ input:-webkit-autofill {
   justify-content: space-between; 
   z-index: 1;
 }
-
 .slider-button-prev,
 .slider-button-next {
+  position: relative;
   width: 2.5rem;
   height: 2.5rem;
   display: flex;
   align-items: center;
 }
 
+.slider-button-next {
+  margin-right: 2rem;
+}
+
+.slider-button-prev {
+  margin-left: 2rem;
+}
+
 .teacher-arrow-next-icon,
 .teacher-arrow-prev-icon{
   width: 2.5rem;
   height: 2.5rem;
-  border-radius: 50%;
-  padding: 2.5rem;
-  box-shadow: 0 0 5px #faf472 , 0 0 25px #faf472 , 0 0 50px #faf472,
-  0 0 200px #faf472;
 }
 
-/* border-radius: 50%;
-  padding: 1.875rem;
-  box-shadow: 0 0 5px #faf472 , 0 0 25px #faf472 , 0 0 50px #faf472,
-  0 0 200px #faf472; */
+.slider-button-prev::before,
+.slider-button-next::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.875rem;
+  height: 1.25rem;
+  background-color: rgba(250, 244, 114, 0.3);
+}
+
+.slider-button-prev::before {
+  left: 20%;
+}
 
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
@@ -1631,6 +1647,12 @@ input:-webkit-autofill {
   .courses-title:hover {
     transform: translateY(-0.1875rem);
     box-shadow: 0 10px 20px #fc00fc;
+  }
+
+  .slider-button-prev:hover::before,
+  .slider-button-next:hover::before{
+    cursor: pointer;
+    box-shadow: 0 0  25px #faf472, 0 0 55px #faf472, 0 0 75px #faf472;
   }
 }
 
@@ -1875,6 +1897,15 @@ input:-webkit-autofill {
     width: 5px;
     height: 13px;
   }
+
+  .teachers-picture {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .fifth-teacher {
+    object-position: -29px 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2005,6 +2036,28 @@ input:-webkit-autofill {
 
   .prices-info-text {
     text-align: center;
+  }
+
+  .teachers-picture {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .teacher-arrow-next-icon, 
+  .teacher-arrow-prev-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .slider-button-prev,
+  .slider-button-next {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .slider-button-next::before,
+  .slider-button-prev::before {
+    display: none;
   }
 }
 
@@ -2306,6 +2359,18 @@ input:-webkit-autofill {
   .prices-form-title {
     font-size: 1rem;
   }
+
+  .teachers-title {
+    font-size: 1.0875rem;
+  }
+
+  .teachers-name {
+    font-size: 1.3rem;
+  }
+
+  .teachers-text {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -2406,5 +2471,14 @@ input:-webkit-autofill {
 
   .card-text {
     font-size: 1rem;
+  }
+
+  .teachers-picture {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .teachers-name {
+    width: 15rem;
   }
 }
