@@ -1487,6 +1487,7 @@ input:-webkit-autofill {
   height: 2.5rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .slider-button-next {
@@ -1651,7 +1652,6 @@ input:-webkit-autofill {
 
   .slider-button-prev:hover::before,
   .slider-button-next:hover::before{
-    cursor: pointer;
     box-shadow: 0 0  25px #faf472, 0 0 55px #faf472, 0 0 75px #faf472;
   }
 }
