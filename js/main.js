@@ -480,3 +480,19 @@ const swiper = new Swiper("#teachers-swiper", {
     prevEl: ".slider-button-prev",
   },
 });
+
+const swiperReviews = new Swiper("#reviews-swiper", {
+  effect: "cards",
+  speed: 400,
+  slidesPerView: 1,
+  autoHeight: true,
+  loop: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    dynamicBullets: true,
+    dynamicMainBullets: 3,
+    clickable: true,
+  },
+});
