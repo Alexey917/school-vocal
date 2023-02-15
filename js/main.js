@@ -486,13 +486,13 @@ const swiperReviews = new Swiper("#reviews-swiper", {
   speed: 400,
   slidesPerView: 1,
   autoHeight: true,
+  grabCursor: true,
   loop: true,
 
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
     dynamicBullets: true,
-    dynamicMainBullets: 3,
     clickable: true,
   },
 });

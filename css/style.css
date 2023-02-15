@@ -1527,6 +1527,10 @@ input:-webkit-autofill {
   margin-top: 6rem;
 }
 
+#reviews-swiper {
+  width: 400px;
+}
+
 .reviews-title {
   width: 20rem;
   margin: auto;
@@ -1553,10 +1557,11 @@ input:-webkit-autofill {
   flex-direction: column;
   justify-content: center;
   min-height: 100%;
-  width: 350px !important;
+  width: 400px !important;
   padding: 1.875rem 1.875rem 1.875rem 1.875rem;
   border-radius: 0.625rem;
   background-color: #ffffff;
+  box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
 }
 
 .wrapper-review {
@@ -1565,15 +1570,11 @@ input:-webkit-autofill {
   margin-bottom: 1rem;
 }
 
-.text-review {
-
-}
-
 .wrapper-review-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 2rem;
+  margin-right: 1rem;
   width: 62px;
   height: 62px;
   border-radius: 50%;
@@ -1583,6 +1584,48 @@ input:-webkit-autofill {
 .review-logo {
   width: 3rem;
   height: 3rem;
+}
+
+:root {
+  --swiper-theme-color: #fc00fc;
+}
+
+.pagination-margin {
+  margin-bottom: 1rem;
+}
+
+.title-review {
+  margin: 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 2.325rem;
+  color: #fc00fc;
+}
+
+.text-review {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #3d3935;
+}
+
+.reviews-text {
+  margin: auto;
+  margin-top: 6rem;
+  width: 28.75rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #fc00fc;
+  padding: 3.875rem 3.875rem 3.875rem 3.875rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
