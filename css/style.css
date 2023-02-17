@@ -1628,6 +1628,13 @@ input:-webkit-autofill {
   text-align: center;
 }
 
+.video-reviews {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: .625rem;
+  box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
+}
+
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
     color: #681173;
