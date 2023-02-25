@@ -1812,6 +1812,10 @@ input:-webkit-autofill {
     left: 4.5px;
     top: -4px;
   }
+
+  .reviews-text {
+    width: 35.75rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2176,6 +2180,19 @@ input:-webkit-autofill {
   .slider-button-prev::before {
     display: none;
   }
+
+  #reviews-swiper {
+    width: 250px;
+  }
+
+  .review {
+    width: 250px !important;
+  }
+
+  .video-reviews {
+    width: 190px;
+    height: 190px;
+  }
 }
 
 @media (max-width: 486px) {
@@ -2487,6 +2504,22 @@ input:-webkit-autofill {
 
   .teachers-text {
     font-size: 1rem;
+  }
+
+  .reviews-text {
+    width: 28.75rem;
+  }
+
+  .reviews-title {
+    font-size: 1.0875rem;
+  }
+
+  .title-review {
+    font-size: 1rem;
+  }
+
+  .text-review {
+    font-size: 0.75rem;
   }
 }
 
