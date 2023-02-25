@@ -1269,7 +1269,7 @@ input:-webkit-autofill {
   transform: translateX(-4rem) skewX(-45deg);
   transition: all 0.1s;
   -webkit-animation: move-light 4s 0.1s ease-in-out infinite;
-          animation: move-light 4s 0.1s ease-in-out infinite;
+  animation: move-light 4s 0.1s ease-in-out infinite;
 }
 
 @-webkit-keyframes move-light {
@@ -1354,8 +1354,7 @@ input:-webkit-autofill {
   display: none;
 }
 
-.prices-notify-label input:checked ~
-.prices-checkmark:after {
+.prices-notify-label input:checked ~ .prices-checkmark:after {
   display: block;
 }
 
@@ -1380,8 +1379,7 @@ input:-webkit-autofill {
 
 .prices-input.is-invalid {
   border: 1px solid red;
-  box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red,
-    0 0 200px red;
+  box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 200px red;
 }
 
 .just-validate-error-label {
@@ -1431,12 +1429,12 @@ input:-webkit-autofill {
   height: 15rem;
   border-radius: 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: 0 0;
-     object-position: 0 0;
-  box-shadow: 0 0 5px #faf472 , 0 0 25px #faf472 , 0 0 50px #faf472,
-  0 0 200px #faf472;
-    /* #faf472 */
+  object-position: 0 0;
+  box-shadow: 0 0 5px #faf472, 0 0 25px #faf472, 0 0 50px #faf472,
+    0 0 200px #faf472;
+  /* #faf472 */
 }
 
 .teachers-name {
@@ -1466,12 +1464,12 @@ input:-webkit-autofill {
 
 .third-teacher {
   -o-object-position: 0 -1.7px;
-     object-position: 0 -1.7px;
+  object-position: 0 -1.7px;
 }
 
 .fifth-teacher {
   -o-object-position: -45px 0;
-     object-position: -45px 0;
+  object-position: -45px 0;
 }
 
 .slider-buttons {
@@ -1481,7 +1479,7 @@ input:-webkit-autofill {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   z-index: 1;
 }
 .slider-button-prev,
@@ -1503,7 +1501,7 @@ input:-webkit-autofill {
 }
 
 .teacher-arrow-next-icon,
-.teacher-arrow-prev-icon{
+.teacher-arrow-prev-icon {
   width: 2.5rem;
   height: 2.5rem;
 }
@@ -1550,7 +1548,6 @@ input:-webkit-autofill {
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
 }
-
 
 .review {
   display: flex;
@@ -1631,8 +1628,12 @@ input:-webkit-autofill {
 .video-reviews {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-radius: .625rem;
-  box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
+  border-radius: 0.625rem;
+  cursor: pointer;
+}
+
+.swiper-pagination {
+  cursor: pointer;
 }
 
 @media (min-width: 992px) {
@@ -1767,8 +1768,8 @@ input:-webkit-autofill {
   }
 
   .slider-button-prev:hover::before,
-  .slider-button-next:hover::before{
-    box-shadow: 0 0  25px #faf472, 0 0 55px #faf472, 0 0 75px #faf472;
+  .slider-button-next:hover::before {
+    box-shadow: 0 0 25px #faf472, 0 0 55px #faf472, 0 0 75px #faf472;
   }
 }
 
@@ -1811,7 +1812,6 @@ input:-webkit-autofill {
     left: 4.5px;
     top: -4px;
   }
-  
 }
 
 @media (max-width: 1024px) {
@@ -1847,7 +1847,7 @@ input:-webkit-autofill {
   .prices-checkmark {
     top: 17px;
     left: 5px;
-}
+  }
 }
 
 @media (max-width: 992px) {
@@ -2021,7 +2021,7 @@ input:-webkit-autofill {
 
   .fifth-teacher {
     -o-object-position: -29px 0;
-       object-position: -29px 0;
+    object-position: -29px 0;
   }
 }
 
@@ -2160,7 +2160,7 @@ input:-webkit-autofill {
     height: 12rem;
   }
 
-  .teacher-arrow-next-icon, 
+  .teacher-arrow-next-icon,
   .teacher-arrow-prev-icon {
     width: 2rem;
     height: 2rem;

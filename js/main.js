@@ -487,7 +487,6 @@ const swiperReviews = new Swiper("#reviews-swiper", {
   slidesPerView: 1,
   autoHeight: true,
   grabCursor: true,
-  loop: true,
 
   pagination: {
     el: ".swiper-pagination",
