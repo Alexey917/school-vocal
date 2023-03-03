@@ -2549,6 +2549,11 @@ input:-webkit-autofill {
   .text-review {
     font-size: 0.75rem;
   }
+
+  .reviews-text {
+    font-size: 1rem;
+    width: 24.75rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -2658,5 +2663,31 @@ input:-webkit-autofill {
 
   .teachers-name {
     width: 15rem;
+  }
+
+  #reviews-swiper {
+    width: 250px;
+  }
+
+  .review {
+    width: 190px !important;
+  }
+
+  .wrapper-review-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .video-reviews {
+    width: 130px;
+  }
+
+  .pagination-margin {
+    margin-left: -2.5rem;
+  }
+
+  .reviews-text {
+    font-size: 0.9rem;
+    width: 21.75rem;
   }
 }
