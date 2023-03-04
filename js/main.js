@@ -494,4 +494,15 @@ const swiperReviews = new Swiper("#reviews-swiper", {
     dynamicBullets: true,
     clickable: true,
   },
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      effect: "fade",
+    },
+
+    375: {
+      effect: "cards",
+    },
+  },
 });

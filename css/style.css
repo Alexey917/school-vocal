@@ -1549,6 +1549,10 @@ input:-webkit-autofill {
   box-shadow: 0.2rem 0.2rem 1rem #fc00fc;
 }
 
+.swiper-wrapper {
+  min-height: 100% !important;
+}
+
 .review {
   display: flex;
   flex-direction: column;
@@ -1571,6 +1575,7 @@ input:-webkit-autofill {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   margin-right: 1rem;
   width: 62px;
   height: 62px;
