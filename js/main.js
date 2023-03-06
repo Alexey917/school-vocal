@@ -488,6 +488,11 @@ const swiperReviews = new Swiper("#reviews-swiper", {
   autoHeight: true,
   grabCursor: true,
 
+  navigation: {
+    nextEl: ".slider-button-prev",
+    prevEl: ".slider-button-next",
+  },
+
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
@@ -498,10 +503,11 @@ const swiperReviews = new Swiper("#reviews-swiper", {
   breakpoints: {
     // when window width is >= 320px
     320: {
-      effect: "fade",
+      slidesPerView: 1,
+      effect: "none",
     },
 
-    375: {
+    486: {
       effect: "cards",
     },
   },

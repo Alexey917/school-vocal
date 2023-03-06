@@ -1641,6 +1641,11 @@ input:-webkit-autofill {
   cursor: pointer;
 }
 
+.swiper-button-review-prev,
+.swiper-button-review-next {
+  display: none;
+}
+
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
     color: #681173;
@@ -2671,11 +2676,11 @@ input:-webkit-autofill {
   }
 
   #reviews-swiper {
-    width: 235px;
+    width: 250px;
   }
 
   .review {
-    width: 185px !important;
+    width: 250px !important;
   }
 
   .wrapper-review-logo {
@@ -2687,12 +2692,37 @@ input:-webkit-autofill {
     width: 130px;
   }
 
-  .pagination-margin {
-    margin-left: -2.5rem;
-  }
-
   .reviews-text {
     font-size: 0.9rem;
     width: 21.75rem;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .slider-button-review-prev,
+  .slider-button-review-next {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    z-index: 1;
+  }
+
+  .slider-buttons-review {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .review-arrow-prev-icon,
+  .review-arrow-next-icon {
+    width: 2rem;
+    height: 2rem;
   }
 }
