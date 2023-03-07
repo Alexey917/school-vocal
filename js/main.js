@@ -502,12 +502,12 @@ const swiperReviews = new Swiper("#reviews-swiper", {
 
   breakpoints: {
     // when window width is >= 320px
-    320: {
+    280: {
       slidesPerView: 1,
-      effect: "none",
+      effect: "fade",
     },
 
-    486: {
+    487: {
       effect: "cards",
     },
   },
