@@ -482,7 +482,7 @@ const swiper = new Swiper("#teachers-swiper", {
 });
 
 const swiperReviews = new Swiper("#reviews-swiper", {
-  effect: "cards",
+  // effect: "cards",
   speed: 400,
   slidesPerView: 1,
   autoHeight: true,
@@ -504,7 +504,6 @@ const swiperReviews = new Swiper("#reviews-swiper", {
     // when window width is >= 320px
     280: {
       slidesPerView: 1,
-      effect: "fade",
     },
 
     487: {

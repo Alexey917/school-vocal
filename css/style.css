@@ -2712,7 +2712,7 @@ input:-webkit-autofill {
 
   #reviews-swiper {
     width: 270px;
-    overflow: hidden !important;
+    /* overflow: hidden !important; */
     border-radius: 10px;
   }
 
