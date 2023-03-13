@@ -1029,8 +1029,8 @@
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-logo">
-            <a href="./" class="navbar-list-item-link footer-logo-link">
-              <img class="logo-icon" src="img/logo_main.svg" alt="logo" />
+            <a href="./" class="footer-logo-link">
+              <img class="logo-icon footer-logo-icon" src="img/logo_main.svg" alt="logo" />
             </a>
 
             <span class="footer-logo-text">Школа вокала “Свой голос”</span>
@@ -1044,7 +1044,7 @@
             </a>
           </div>
 
-          <ul class="footer-list-contacts">
+          <ul class="footer-list-links">
             <li class="footer-list-item">
               <a href="#" class="footer-list-item-link">О школе</a>
             </li>
@@ -1072,15 +1072,73 @@
             <li class="footer-list-item">
               <a href="#" class="footer-list-item-link">Контакты</a>
             </li>
+          </ul>
+
+          <ul class="footer-list-contacts">
+            <li class="footer-list-item">
+              <svg class="footer-phone-icon">
+                <use href="img/sprite.svg#footer-phone"></use>
+              </svg>
+
+              <a href="tel:+79969613767" class="footer-list-item-link">+7 (996) 961-37-67</a>
+            </li>
 
             <li class="footer-list-item">
-              <a href="tel:+79969613767" class="footer-list-item-link">Контакты</a>
+              <svg class="footer-time-icon">
+                <use href="img/sprite.svg#time"></use>
+              </svg>
+
+              <span class="footer-list-item-text">Время работы: Пн-Вс  9:00-21:00</span>
+            </li>
+
+            <li class="footer-list-item">
+              <svg class="footer-placeholder-icon">
+                <use href="img/sprite.svg#footer-placeholder"></use>
+              </svg>
+
+              <span class="footer-list-item-text">г. Пенза Красная улица, 45</span>
+            </li>
+
+            <li class="footer-list-item">
+              <ul class="social-list footer-social-list">
+                <li class="social-list-item footer-social-list-item">
+                  <a href="#" class="social-list-item-link footer-social-list-item-link">
+                    <svg class="vk-icon">
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+  
+                <li class="social-list-item footer-social-list-item">
+                  <a href="#" class="social-list-item-link footer-social-list-item-link">
+                    <svg class="tg-icon">
+                      <use href="img/sprite.svg#tg"></use>
+                    </svg>
+                  </a>
+                </li>
+  
+                <li class="social-list-item footer-social-list-item">
+                  <a href="#" class="social-list-item-link footer-social-list-item-link">
+                    <svg class="inst-icon">
+                      <use href="img/sprite.svg#inst"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
 
-          
-
-          <div class="footer-map"></div>
+          <div class="footer-map">
+            <picture>
+              <source type="image/webp" srcset="img/map.webp" />
+              <source type="image/png" srcset="img/map.jpg" />
+              <img
+                class="map-img"
+                src="img/map.jpg"
+                alt="map"
+              />
+            </picture>
+          </div>
         </div>
       </div>
     </footer>
