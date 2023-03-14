@@ -1648,7 +1648,7 @@ input:-webkit-autofill {
 
 .footer {
   margin-top: 6rem;
-  background-color: black;
+  background-color: #050801;
 }
 
 .footer-wrapper {
@@ -1744,6 +1744,77 @@ input:-webkit-autofill {
   border-radius: .625rem;
   transition: 1s;
 }
+
+.footer-button-neon {
+  position: relative;
+  display: inline-block;
+  min-width: 9.9375rem;
+  padding: 0.9375rem 2.5313rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: #faf472;
+  border-radius: .625rem;
+  transition: 0.5s;
+  /* --webkit-box-reflect: below 1px lianer-gradient(transparent, #0005); */
+}
+
+.button-line {
+  position: absolute;
+  display: block;
+}
+
+.button-line--top {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #faf472);
+  animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+.button-line--bottom {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #faf472);
+}
+
+.button-line--left {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(270deg, transparent, #faf472);
+}
+
+.button-line--right {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #faf472);
+  animation: animate2 2s linear infinite;
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+
 
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
@@ -1893,6 +1964,38 @@ input:-webkit-autofill {
     box-shadow: 0 0 5px #faf472, 0 0 25px #faf472, 0 0 50px #faf472,
     0 0 200px #faf472;
   }
+
+ /*.footer-button-neon:hover .button-line--top {
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+
+  .footer-button-neon:hover .button-line--bottom {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+
+  .footer-button-neon:hover .button-line--left {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+  }
+
+  .footer-button-neon:hover .button-line--right {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+  }
+
+  .footer-button-neon:hover {
+    box-shadow: 0 0 .625rem #faf472, 0 0 2.5rem #faf472, 0 0 5rem #faf472; 
+    box-shadow: 0 0 5px #faf472, 0 0 20px #faf472, 0 0 50px #faf472, 0 0 200px #faf472;
+    background-color: #faf472;
+    color: #681173;
+    transition-delay: 1s;
+  }*/
 }
 
 @media (max-width: 1280px) {
