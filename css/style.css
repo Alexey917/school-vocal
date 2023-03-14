@@ -1725,8 +1725,16 @@ input:-webkit-autofill {
 .footer-vk-icon,
 .footer-tg-icon,
 .footer-inst-icon {
-  width: 2rem;
-  height: 2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.footer-map {
+  display: inline-block;
+  width: 16.875rem;
+  height: 16.875rem;
+  overflow: hidden;
+  border-radius: .625rem;
 }
 
 .map-img {
@@ -1734,6 +1742,7 @@ input:-webkit-autofill {
   height: 16.875rem;
   object-fit: cover;
   border-radius: .625rem;
+  transition: 1s;
 }
 
 @media (min-width: 992px) {
@@ -1870,6 +1879,19 @@ input:-webkit-autofill {
   .slider-button-prev:hover::before,
   .slider-button-next:hover::before {
     box-shadow: 0 0 25px #faf472, 0 0 55px #faf472, 0 0 75px #faf472;
+  }
+
+  .footer-list-item-link:hover {
+    text-shadow: 0.2rem 0.2rem 1rem #faf472, 0.2rem 0.2rem 1rem #faf472;
+  }
+
+  .map-img:hover {
+    transform: scale(1.2);
+  }
+
+  .footer-map:hover {
+    box-shadow: 0 0 5px #faf472, 0 0 25px #faf472, 0 0 50px #faf472,
+    0 0 200px #faf472;
   }
 }
 
