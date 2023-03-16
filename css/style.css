@@ -1655,6 +1655,7 @@ input:-webkit-autofill {
   display: flex;
   justify-content: space-between;
   padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .footer-logo {
@@ -1734,14 +1735,12 @@ input:-webkit-autofill {
   width: 16.875rem;
   height: 16.875rem;
   overflow: hidden;
-  border-radius: .625rem;
 }
 
 .map-img {
   width: 16.875rem;
   height: 16.875rem;
   object-fit: cover;
-  border-radius: .625rem;
   transition: 1s;
 }
 
@@ -1753,9 +1752,8 @@ input:-webkit-autofill {
   overflow: hidden;
   text-decoration: none;
   color: #faf472;
-  border-radius: .625rem;
   transition: 0.5s;
-  /* --webkit-box-reflect: below 1px lianer-gradient(transparent, #0005); */
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
 .button-line {
@@ -1787,6 +1785,17 @@ input:-webkit-autofill {
   width: 100%;
   height: 2px;
   background: linear-gradient(270deg, transparent, #faf472);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
 }
 
 .button-line--left {
@@ -1794,7 +1803,18 @@ input:-webkit-autofill {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(270deg, transparent, #faf472);
+  background: linear-gradient(360deg, transparent, #faf472);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
 }
 
 .button-line--right {
@@ -1803,7 +1823,8 @@ input:-webkit-autofill {
   width: 2px;
   height: 100%;
   background: linear-gradient(180deg, transparent, #faf472);
-  animation: animate2 2s linear infinite;
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
 }
 
 @keyframes animate2 {
@@ -1996,6 +2017,12 @@ input:-webkit-autofill {
     color: #681173;
     transition-delay: 1s;
   }*/
+}
+
+.footer-button-neon:hover {
+  background-color: #faf472;
+  box-shadow: 0 0 5px #faf472, 0 0 20px #faf472, 0 0 50px #faf472, 0 0 200px #faf472;
+  color: #681173;
 }
 
 @media (max-width: 1280px) {
