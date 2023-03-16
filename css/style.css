@@ -1736,11 +1736,8 @@ input:-webkit-autofill {
 .footer-vk-icon,
 .footer-tg-icon,
 .footer-inst-icon {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.9rem;
+  height: 1.9rem;
 }
 
 .footer-map {
