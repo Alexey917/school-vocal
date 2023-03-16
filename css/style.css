@@ -1696,7 +1696,7 @@ input:-webkit-autofill {
   margin-bottom: 0.5rem;
 }
 
-.footer-list-item:last-child {
+.footer-list-item-last {
   justify-content: center;
 }
 
@@ -1707,6 +1707,7 @@ input:-webkit-autofill {
 }
 
 .footer-list-item-link {
+  max-width: 16.875rem;
   font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
@@ -1724,6 +1725,7 @@ input:-webkit-autofill {
 }
 
 .footer-list-item-text {
+  max-width: 16.875rem;
   font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
@@ -1734,6 +1736,9 @@ input:-webkit-autofill {
 .footer-vk-icon,
 .footer-tg-icon,
 .footer-inst-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
 }
@@ -1756,8 +1761,10 @@ input:-webkit-autofill {
   position: relative;
   display: inline-block;
   min-width: 9.9375rem;
+  max-width: 15.625rem;
   padding: 0.9375rem 2.5313rem;
   overflow: hidden;
+  text-align: center;
   text-decoration: none;
   color: #faf472;
   transition: 0.5s;
