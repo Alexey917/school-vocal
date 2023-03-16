@@ -1750,7 +1750,8 @@ input:-webkit-autofill {
 .map-img {
   width: 16.875rem;
   height: 16.875rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: 1s;
 }
 
@@ -1779,7 +1780,17 @@ input:-webkit-autofill {
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, transparent, #faf472);
-  animation: animate1 1s linear infinite;
+  -webkit-animation: animate1 1s linear infinite;
+          animation: animate1 1s linear infinite;
+}
+
+@-webkit-keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
 }
 
 @keyframes animate1 {
@@ -1797,8 +1808,19 @@ input:-webkit-autofill {
   width: 100%;
   height: 2px;
   background: linear-gradient(270deg, transparent, #faf472);
-  animation: animate3 1s linear infinite;
-  animation-delay: 0.5s;
+  -webkit-animation: animate3 1s linear infinite;
+          animation: animate3 1s linear infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
 }
 
 @keyframes animate3 {
@@ -1816,8 +1838,19 @@ input:-webkit-autofill {
   width: 2px;
   height: 100%;
   background: linear-gradient(360deg, transparent, #faf472);
-  animation: animate4 1s linear infinite;
-  animation-delay: 0.75s;
+  -webkit-animation: animate4 1s linear infinite;
+          animation: animate4 1s linear infinite;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+@-webkit-keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
 }
 
 @keyframes animate4 {
@@ -1835,8 +1868,19 @@ input:-webkit-autofill {
   width: 2px;
   height: 100%;
   background: linear-gradient(180deg, transparent, #faf472);
-  animation: animate2 1s linear infinite;
-  animation-delay: 0.25s;
+  -webkit-animation: animate2 1s linear infinite;
+          animation: animate2 1s linear infinite;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+@-webkit-keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
 }
 
 @keyframes animate2 {
