@@ -2456,6 +2456,11 @@ input:-webkit-autofill {
   .footer-social-list {
     display: flex;
   }
+
+  .footer-list-item-link,
+  .footer-list-item-text {
+    text-align: center;
+  }
 }
 
 @media (max-width: 486px) {
