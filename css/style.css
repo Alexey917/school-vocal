@@ -662,7 +662,8 @@ body {
   height: 0%;
 }
 
-.test-modal {
+.test-modal,
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -675,7 +676,8 @@ body {
   background-color: rgba(41, 45, 51, 0.5);
 }
 
-.test-modal-dialog {
+.test-modal-dialog,
+.modal-dialog {
   position: relative;
   display: flex;
   align-items: center;
@@ -690,12 +692,14 @@ body {
   border-radius: 0.625rem;
 }
 
-.test-modal-is-open .test-modal-dialog {
+.test-modal-is-open .test-modal-dialog,
+.modal-is-open .modal-dialog {
   transform: translateY(0);
   opacity: 1;
 }
 
-.test-modal-is-open {
+.test-modal-is-open,
+.modal-is-open {
   transform: translateX(0);
   visibility: visible;
   opacity: 1;

@@ -193,7 +193,7 @@
             </div>
 
             <div class="header-button-wrap">
-              <button class="header-button">Записаться</button>
+              <button class="header-button" data-toggle="modal">Записаться</button>
             </div>
           </div>
         </div>
@@ -1142,6 +1142,85 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal" id="registration">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a class="close-test-modal close-modal" href="#">
+            <svg class="test-close-icon modal-close-icon">
+              <use href="img/sprite.svg#close"></use>
+            </svg>
+          </a>
+
+          <h2 class="question-title">Укажите ваше имя и номер телефона, чтобы получить приглашение на бесплатное занятие</h2>
+
+          <div class="answers">
+            <form action="#" class="form-answers" id="formAnswers">
+              <div class="form-test-group form-name form-modal-group">
+                <input 
+                 id="test-user-name" 
+                 type="text" 
+                 class="test-input" 
+                 name="username" 
+                 placeholder=" "
+                />
+                <label class="test-input-label" for="test-user-name">Имя</label>
+              </div>
+
+              <div class="answers-item">
+                <input
+                  type="radio"
+                  id="answers-item-2"
+                  name="answer"
+                  class="input-answer"
+                />
+                <label for="answers-item-2" class="label-answer">
+                  <span class="answer-text">Вариант ответа</span>
+                </label>
+              </div>
+
+              <div class="answers-item">
+                <input
+                  type="radio"
+                  id="answers-item-3"
+                  name="answer"
+                  class="input-answer"
+                />
+                <label for="answers-item-3" class="label-answer">
+                  <span class="answer-text">Вариант ответа</span>
+                </label>
+              </div> -->
+            </form>
+          </div>
+        </div>
+
+        <div class="test-modal-footer">
+          <button class="test-modal-prev-button">Назад</button>
+          <button class="test-modal-next-button">Далее</button>
+
+          <div class="form-test-group last-test-button">
+            <button type="submit" class="test-modal-button">
+              Получить приглашение
+            </button>
+          </div>
+
+          <div class="test-notify last-test-notify">
+            <label class="label-notify">
+              <input type="checkbox" id="notify" name="checkbox" required />
+              <span class="checkmark"></span>
+            </label>
+            <p class="test-notify-text">
+              Нажимая на кнопку, вы соглашаетесь на обработку персональных
+              данных и
+              <a href="#" class="test-notify-link"
+                >политикой конфиденциальности</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /.test-modal-dialog -->
+    </div>
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/just-validate.production.min.js"></script>

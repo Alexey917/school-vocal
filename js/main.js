@@ -240,7 +240,7 @@ const playTest = () => {
       lastTestButton.style.display = "flex";
       lastTestNotify.style.display = "flex";
 
-      questionTitle.textContent = `Укажите ваше номер телефона, чтобы получить приглашение на бесплатное занятие`;
+      questionTitle.textContent = `Укажите ваш номер телефона, чтобы получить приглашение на бесплатное занятие`;
 
       formAnswers.innerHTML = `
       <div class="form-test-group">
@@ -510,4 +510,30 @@ const swiperReviews = new Swiper("#reviews-swiper", {
       effect: "cards",
     },
   },
+});
+
+let currentModal; //текущее модальное окно
+let modalDialog; //белое диалоговое окно
+let alertModal = document.querySelector("#alert-modal"); //окно с благодарностью
+
+const modalButtons = document.querySelectorAll("[data-toggle=modal]"); //переключатели модальных окон
+modalButtons.forEach((button) => {
+  /*клик по переключателю*/
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    /*определяем текущее открытое окно*/
+    currentModal = document.querySelector(button.dataset.target);
+    /*открываем текущее окно*/
+    currentModal.classList.toggle("modal-is-open");
+    /*назначаем диалоговое окно*/
+    modalDialog = currentModal.querySelector(".modal-dialog");
+    /*отслеживаем клик по окну и по пустым областям*/
+    currentModal.addEventListener("click", (event) => {
+      /*если клик в пустую область (не диалог)*/
+      if (!event.composedPath().includes(modalDialog)) {
+        /*закрываем окно*/
+        currentModal.classList.remove("modal-is-open");
+      }
+    });
+  });
 });
