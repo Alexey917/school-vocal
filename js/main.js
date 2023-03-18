@@ -11,6 +11,8 @@ const testModal = document.querySelector(".test-modal");
 const testModalDialog = document.querySelector(".test-modal-dialog");
 const closeTestModal = document.querySelector(".close-test-modal");
 
+const closeModal = document.querySelector(".close-modal");
+
 const questionTitle = document.querySelector(".question-title");
 const formAnswers = document.querySelector("#formAnswers");
 const nextButton = document.querySelector(".test-modal-next-button");
@@ -537,3 +539,4 @@ modalButtons.forEach((button) => {
     });
   });
 });
+

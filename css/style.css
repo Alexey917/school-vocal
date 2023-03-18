@@ -1896,6 +1896,24 @@ input:-webkit-autofill {
   }
 }
 
+.modal-button,
+.modal-notify {
+  display: flex;
+}
+
+.modal-footer {
+  flex-direction: column;
+}
+
+.form-modal-name {
+  margin-bottom: 0;
+}
+
+.modal-button {
+  justify-content: center;
+  align-items: center
+}
+
 
 @media (min-width: 992px) {
   .navbar-list-item-link:hover {
