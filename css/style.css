@@ -2785,7 +2785,8 @@ input:-webkit-autofill {
     display: flex;
   }
 
-  .test-modal-dialog {
+  .test-modal-dialog,
+  .modal-dialog {
     width: 23rem;
   }
 
