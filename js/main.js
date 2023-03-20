@@ -12,6 +12,7 @@ const testModalDialog = document.querySelector(".test-modal-dialog");
 const closeTestModal = document.querySelector(".close-test-modal");
 
 const closeModal = document.querySelector(".close-modal");
+const modal = document.querySelector(".modal");
 
 const questionTitle = document.querySelector(".question-title");
 const formAnswers = document.querySelector("#formAnswers");
@@ -167,6 +168,12 @@ document.addEventListener("keyup", (event) => {
     testModal.classList.contains("test-modal-is-open")
   ) {
     testModal.classList.toggle("test-modal-is-open");
+  }
+});
+
+document.addEventListener("keyup", (event) => {
+  if (event.key == "Escape" && modal.classList.contains("modal-is-open")) {
+    modal.classList.toggle("modal-is-open");
   }
 });
 
