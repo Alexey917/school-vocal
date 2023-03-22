@@ -1391,7 +1391,7 @@ input:-webkit-autofill {
 
 .just-validate-error-label {
   position: absolute;
-  top: -1.5rem;
+  top: -1rem;
   left: 1rem;
   display: inline-block;
   font-size: 1rem;
