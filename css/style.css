@@ -840,8 +840,7 @@ body {
 
 .test-modal-button {
   width: 15rem;
-  height: 100%;
-  padding: 0.2rem 1rem;
+  padding: 0.625rem 1rem;
   cursor: pointer;
   font-style: normal;
   font-weight: 500;
@@ -942,6 +941,10 @@ input:-webkit-autofill {
 .last-test-notify {
   display: none;
   justify-content: center;
+}
+
+.last-test-button {
+  margin-top: 1.875rem;
 }
 
 .form-name {
@@ -1899,6 +1902,10 @@ input:-webkit-autofill {
 .modal-button,
 .modal-notify {
   display: flex;
+}
+
+.modal-button {
+  margin-top: 1.875rem;
 }
 
 .modal-footer {
