@@ -596,7 +596,7 @@
               </div>
 
               <div class="prices-form-button">
-                <button class="prices-button">Получить приглашение</button>
+                <button class="prices-button" data-toggle="modal" data-target="#alert-modal">Получить приглашение</button>
               </div>
 
               <div class="prices-notify">
@@ -1201,6 +1201,22 @@
               </div>
             </form>
           </div>
+        </div>
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+
+    <div class="modal" id="alert-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a class="close-test-modal close-modal" href="#" data-toggle="modal" data-target="#alert-modal">
+            <svg class="test-close-icon modal-close-icon">
+              <use href="img/sprite.svg#close"></use>
+            </svg>
+          </a>
+
+          <h2 class="modal-title question-title">Благодарим вас за заявку! 
+           <br> Наш менеджер свяжется с вами в течении 5 минут.</h2>
         </div>
       </div>
       <!-- /.modal-dialog -->

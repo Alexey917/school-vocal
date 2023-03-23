@@ -27,6 +27,8 @@ const inputAnswer = document.querySelectorAll(".input-answer");
 const changeColor = document.querySelector(".answer-text");
 const labelCheck = document.querySelector(".label-answer");
 
+const priceButton = document.querySelector(".prices-button");
+
 /*const getData = () => {
   formAnswers.textContent = "Загрузка...";
 
@@ -270,7 +272,8 @@ const playTest = () => {
       lastTestButton.style.display = "none";
       lastTestNotify.style.display = "none";
 
-      questionTitle.textContent = `Спасибо за участие!`;
+      questionTitle.textContent = `Спасибо за участие!
+      Наш менеджер свяжется с вами в течении 5 минут.`;
 
       setTimeout(() => {
         testModal.classList.remove("test-modal-is-open");
@@ -348,6 +351,75 @@ const playTest = () => {
 
 //inputItem.classList.add("answer-text-sected");
 
+const swiper = new Swiper("#teachers-swiper", {
+  speed: 400,
+  slidesPerView: 1,
+  autoHeight: true,
+  loop: true,
+
+  navigation: {
+    nextEl: ".slider-button-next",
+    prevEl: ".slider-button-prev",
+  },
+});
+
+const swiperReviews = new Swiper("#reviews-swiper", {
+  effect: "cards",
+  speed: 400,
+  slidesPerView: 1,
+  autoHeight: true,
+  grabCursor: true,
+
+  navigation: {
+    nextEl: ".slider-button-prev",
+    prevEl: ".slider-button-next",
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    dynamicBullets: true,
+    clickable: true,
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    280: {
+      slidesPerView: 1,
+    },
+
+    487: {
+      effect: "cards",
+    },
+  },
+});
+
+let currentModal; //текущее модальное окно
+let modalDialog; //белое диалоговое окно
+let alertModal = document.querySelector("#alert-modal"); //окно с благодарностью
+
+const modalButtons = document.querySelectorAll("[data-toggle=modal]"); //переключатели модальных окон
+modalButtons.forEach((button) => {
+  /*клик по переключателю*/
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    /*определяем текущее открытое окно*/
+    currentModal = document.querySelector(button.dataset.target);
+    /*открываем текущее окно*/
+    currentModal.classList.toggle("modal-is-open");
+    /*назначаем диалоговое окно*/
+    modalDialog = currentModal.querySelector(".modal-dialog");
+    /*отслеживаем клик по окну и по пустым областям*/
+    currentModal.addEventListener("click", (event) => {
+      /*если клик в пустую область (не диалог)*/
+      if (!event.composedPath().includes(modalDialog)) {
+        /*закрываем окно*/
+        currentModal.classList.remove("modal-is-open");
+      }
+    });
+  });
+});
+
 const forms = document.querySelectorAll(".form");
 
 forms.forEach((form) => {
@@ -398,9 +470,20 @@ forms.forEach((form) => {
         }).then((response) => {
           if (response.ok) {
             thisForm.reset();
-            alert("Форма отправлена!");
+            currentModal.classList.remove("modal-is-open");
+            alertModal.classList.add("modal-is-open");
+            currentModal = alertModal;
+            modalDialog = currentModal.querySelector(".modal-dialog");
+            /*отслеживаем клик по окну и по пустым областям*/
+            currentModal.addEventListener("click", (event) => {
+              /*если клик в пустую область (не диалог)*/
+              if (!event.composedPath().includes(modalDialog)) {
+                /*закрываем окно*/
+                currentModal.classList.remove("modal-is-open");
+              }
+            });
           } else {
-            alert("Ошибка. Текст ошибки: ", response.statusText);
+            alert("Ошибка. Текст ошибки: ".response.statusText);
           }
         });
       };
@@ -478,72 +561,4 @@ document.addEventListener("input", (e) => {
   }
 });
 
-const swiper = new Swiper("#teachers-swiper", {
-  speed: 400,
-  slidesPerView: 1,
-  autoHeight: true,
-  loop: true,
-
-  navigation: {
-    nextEl: ".slider-button-next",
-    prevEl: ".slider-button-prev",
-  },
-});
-
-const swiperReviews = new Swiper("#reviews-swiper", {
-  effect: "cards",
-  speed: 400,
-  slidesPerView: 1,
-  autoHeight: true,
-  grabCursor: true,
-
-  navigation: {
-    nextEl: ".slider-button-prev",
-    prevEl: ".slider-button-next",
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets",
-    dynamicBullets: true,
-    clickable: true,
-  },
-
-  breakpoints: {
-    // when window width is >= 320px
-    280: {
-      slidesPerView: 1,
-    },
-
-    487: {
-      effect: "cards",
-    },
-  },
-});
-
-let currentModal; //текущее модальное окно
-let modalDialog; //белое диалоговое окно
-let alertModal = document.querySelector("#alert-modal"); //окно с благодарностью
-
-const modalButtons = document.querySelectorAll("[data-toggle=modal]"); //переключатели модальных окон
-modalButtons.forEach((button) => {
-  /*клик по переключателю*/
-  button.addEventListener("click", (event) => {
-    event.preventDefault();
-    /*определяем текущее открытое окно*/
-    currentModal = document.querySelector(button.dataset.target);
-    /*открываем текущее окно*/
-    currentModal.classList.toggle("modal-is-open");
-    /*назначаем диалоговое окно*/
-    modalDialog = currentModal.querySelector(".modal-dialog");
-    /*отслеживаем клик по окну и по пустым областям*/
-    currentModal.addEventListener("click", (event) => {
-      /*если клик в пустую область (не диалог)*/
-      if (!event.composedPath().includes(modalDialog)) {
-        /*закрываем окно*/
-        currentModal.classList.remove("modal-is-open");
-      }
-    });
-  });
-});
 
