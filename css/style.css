@@ -3,9 +3,11 @@
 }
 
 body {
-  background-image: url("../img/bg-6.jpg");
+  background: rgb(240,233,241);
+  background: linear-gradient(180deg, rgba(240,233,241,1) 0%, rgba(208,4,238,0.9948179955575981) 64%, rgba(171,9,251,1) 100%);
+  /*background-image: url("../img/bg-6.jpg");
   background-repeat: repeat-y;
-  background-size: cover;
+  background-size: cover;*/
   font-family: "Jost", sans-serif;
 }
 
