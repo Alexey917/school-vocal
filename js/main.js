@@ -642,4 +642,10 @@ linksFooter.forEach((link) => {
   });
 });
 
+const logoFooter = document.querySelector(".footer-logo-icon");
+const logoNav = document.querySelector(".nav-logo-icon");
+
+logoFooter.addEventListener("click", (event) => event.preventDefault());
+logoNav.addEventListener("click", (event) => event.preventDefault());
+
 
